@@ -10,7 +10,7 @@ public class DistributionSuccessorFunction implements SuccessorFunction {
         ArrayList retval = new ArrayList();
         Estat board = (Estat) state;
 
-        //Completar
+
 
         return retval;
     }
