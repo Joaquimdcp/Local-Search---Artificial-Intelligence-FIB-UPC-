@@ -1,7 +1,12 @@
 package com.company;
 
 
+import IA.Gasolina.CentrosDistribucion;
+
 import java.util.ArrayList;
+
+
+import static java.lang.Math.abs;
 
 class Pair {
     int g1, g2;
@@ -70,14 +75,15 @@ public class Dada_Camio {
         for (Pair v : viatges) {
             if (v.g1 == -1) {
                 v.g1 = id_peticio;
-                actualitzar_benefici(id_peticio);
                 actualitzar_km(id_peticio);
+                actualitzar_benefici(id_peticio);
                 return true;
             }
             else if (v.g2 == -1) {
                 v.g2 = id_peticio;
+                int id_pet_prev = v.g1;
+                actualitzar_km(id_peticio, id_pet_prev);
                 actualitzar_benefici(id_peticio);
-                actualitzar_km(id_peticio);
             }
         }
         return false;
@@ -89,12 +95,28 @@ public class Dada_Camio {
 
 
     private void actualitzar_benefici(int id_peticio) {
-        //falta implementar
+        //
     }
 
 
     private void actualitzar_km(int id_peticio) {
-        //falta implementar
+        int x_gas = Estat.peticions[id_peticio].getX();
+        int y_gas = Estat.peticions[id_peticio].getY();
+        int x_dis = Estat.camions[id].getCoordX();
+        int y_dis = Estat.camions[id].getCoordX();
+
+        km += abs(x_dis - x_gas) + abs(y_dis - y_gas);
+    }
+
+    private void actualitzar_km(int id_peticio, int id_pet_prev) {
+        int x_gas1 = Estat.peticions[id_peticio].getX();
+        int y_gas1 = Estat.peticions[id_peticio].getY();
+        int x_gas2 = Estat.peticions[id_pet_prev].getX();
+        int y_gas2 = Estat.peticions[id_pet_prev].getY();
+        int x_dis = Estat.camions[id].getCoordX();
+        int y_dis = Estat.camions[id].getCoordX();
+
+        km += abs(x_gas1 - x_gas2) + abs(y_gas1 - y_gas2) + abs(x_gas2 - x_dis) + abs(y_gas2 - y_dis);
     }
 
 
