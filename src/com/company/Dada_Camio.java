@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import static java.lang.Math.abs;
 
 class Pair {
-    int g1, g2;
+    public int g1, g2;
 }
 
 
@@ -47,6 +47,11 @@ public class Dada_Camio {
 
     public Pair get_viatje(int i) {
         return viatges[i];
+    }
+
+    public int get_peticio(int viatge, int posicio) {
+        if return viatges[viatge].g1;
+        return
     }
 
 
