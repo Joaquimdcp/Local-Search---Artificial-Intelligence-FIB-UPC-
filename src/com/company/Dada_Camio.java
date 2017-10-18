@@ -49,11 +49,6 @@ public class Dada_Camio {
         return viatges[i];
     }
 
-    public int get_peticio(int viatge, int posicio) {
-        if return viatges[viatge].g1;
-        return
-    }
-
 
     //afegeix peticio amb id == id_peticio al viatge v
     //retorna true si s'ha pogut afegir la peticio al viatge i false altrament
