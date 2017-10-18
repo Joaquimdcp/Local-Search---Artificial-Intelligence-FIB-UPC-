@@ -10,8 +10,8 @@ import java.util.ArrayList;
 
 
 public class Estat {
-    static public ArrayList<Distribucion> camions = new ArrayList();
-    static public ArrayList<Peticio> peticions = new ArrayList();
+    static public Distribucion[] camions;
+    static public Peticio[] peticions;
 
     Dada_Camio[] dades_camio;
     boolean[] peticio_atesa;
@@ -52,6 +52,13 @@ public class Estat {
         Dada_Camio camio = dades_camio[c];
         camio.afegir_peticio(p);
     }
+
+    // Afegeix peticio fantasma
+    public void reemplaçar(int c1, int viatge1,int pos,int peticio_fantasma){
+
+    }
+
+    public
 
 
 }
