@@ -53,5 +53,12 @@ public class Estat {
         camio.afegir_peticio(p);
     }
 
+    // Afegeix peticio fantasma
+    public void reemplaçar(int c1, int viatge1,int pos,int peticio_fantasma){
+
+    }
+
+    public
+
 
 }

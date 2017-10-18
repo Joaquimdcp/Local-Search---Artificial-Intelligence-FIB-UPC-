@@ -3,12 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="676c2d33-1426-48ad-a3a2-196e616b6ec6" name="Default" comment="">
 <<<<<<< HEAD
+<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
 <<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/Dada_Camio.java" afterPath="$PROJECT_DIR$/src/com/company/Dada_Camio.java" />
 =======
 =======
 >>>>>>> f30b14ed0e68277e3447498aee7e1374fbdbbd20
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+>>>>>>> cec82e93ff4024a17eb2cc0a50d888ce47ea3826
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/Estat.java" afterPath="$PROJECT_DIR$/src/com/company/Estat.java" />
 >>>>>>> 20ac219b113d6ba1df0450ca6a56720f17988841
     </list>
@@ -27,6 +31,7 @@
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state relative-caret-position="705">
               <caret line="53" column="14" lean-forward="false" selection-start-line="53" selection-start-column="14" selection-end-line="53" selection-end-column="14" />
 =======
@@ -35,6 +40,9 @@
 >>>>>>> 20ac219b113d6ba1df0450ca6a56720f17988841
 =======
             <state relative-caret-position="600">
+=======
+            <state relative-caret-position="525">
+>>>>>>> cec82e93ff4024a17eb2cc0a50d888ce47ea3826
               <caret line="40" column="76" lean-forward="false" selection-start-line="40" selection-start-column="67" selection-end-line="40" selection-end-column="76" />
 >>>>>>> f30b14ed0e68277e3447498aee7e1374fbdbbd20
               <folding>
@@ -88,7 +96,7 @@
       <file leaf-file-name="DistributionSuccessorFunction.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/DistributionSuccessorFunction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
+            <state relative-caret-position="450">
               <caret line="34" column="51" lean-forward="false" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -110,6 +118,7 @@
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state relative-caret-position="375">
               <caret line="25" column="53" lean-forward="true" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
 >>>>>>> 20ac219b113d6ba1df0450ca6a56720f17988841
@@ -121,6 +130,10 @@
             <state relative-caret-position="330">
               <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
 >>>>>>> e30e36cec855676751c496e11ba147fc38714457
+=======
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> cec82e93ff4024a17eb2cc0a50d888ce47ea3826
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -281,6 +294,7 @@
         </subPane>
       </pane>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
@@ -288,8 +302,12 @@
       <pane id="PackagesPane" />
       <pane id="Scope" />
 >>>>>>> 20ac219b113d6ba1df0450ca6a56720f17988841
+=======
+>>>>>>> cec82e93ff4024a17eb2cc0a50d888ce47ea3826
       <pane id="AndroidView" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -728,7 +746,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="36" column="11" lean-forward="false" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -908,7 +925,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
+        <state relative-caret-position="525">
           <caret line="40" column="76" lean-forward="false" selection-start-line="40" selection-start-column="67" selection-end-line="40" selection-end-column="76" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -918,7 +935,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/DistributionSuccessorFunction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
+        <state relative-caret-position="450">
           <caret line="34" column="51" lean-forward="false" selection-start-line="34" selection-start-column="30" selection-end-line="34" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -938,6 +955,7 @@
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <state relative-caret-position="375">
           <caret line="25" column="53" lean-forward="true" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
 >>>>>>> 20ac219b113d6ba1df0450ca6a56720f17988841
@@ -949,6 +967,10 @@
         <state relative-caret-position="330">
           <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
 >>>>>>> e30e36cec855676751c496e11ba147fc38714457
+=======
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+>>>>>>> cec82e93ff4024a17eb2cc0a50d888ce47ea3826
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
