@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 
 public class Estat {
-    static public ArrayList<Distribucion> camion = new ArrayList();
+    static public ArrayList<Distribucion> camions = new ArrayList();
     static public ArrayList<Peticio> peticions = new ArrayList();
 
     Dada_Camio[] dades_camio;
@@ -46,7 +46,7 @@ public class Estat {
 
     // Afegeix peticio a un camió
     public void add(int c, int p){
-        Dada_Camio camio = dades_camio.get(c);
+        Dada_Camio camio = dades_camio[c];
         camio.afegir_peticio(p);
     }
 

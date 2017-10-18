@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="676c2d33-1426-48ad-a3a2-196e616b6ec6" name="Default" comment="">
+<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
 <<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/Dada_Camio.java" afterPath="$PROJECT_DIR$/src/com/company/Dada_Camio.java" />
 =======
+=======
+>>>>>>> f30b14ed0e68277e3447498aee7e1374fbdbbd20
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/Estat.java" afterPath="$PROJECT_DIR$/src/com/company/Estat.java" />
 >>>>>>> 20ac219b113d6ba1df0450ca6a56720f17988841
     </list>
@@ -23,12 +26,17 @@
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <state relative-caret-position="705">
               <caret line="53" column="14" lean-forward="false" selection-start-line="53" selection-start-column="14" selection-end-line="53" selection-end-column="14" />
 =======
             <state relative-caret-position="660">
               <caret line="44" column="18" lean-forward="false" selection-start-line="44" selection-start-column="12" selection-end-line="44" selection-end-column="18" />
 >>>>>>> 20ac219b113d6ba1df0450ca6a56720f17988841
+=======
+            <state relative-caret-position="600">
+              <caret line="40" column="76" lean-forward="false" selection-start-line="40" selection-start-column="67" selection-end-line="40" selection-end-column="76" />
+>>>>>>> f30b14ed0e68277e3447498aee7e1374fbdbbd20
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -100,9 +108,14 @@
       <file leaf-file-name="Estat.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Estat.java">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="375">
               <caret line="25" column="53" lean-forward="true" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
 >>>>>>> 20ac219b113d6ba1df0450ca6a56720f17988841
+=======
+            <state relative-caret-position="720">
+              <caret line="48" column="42" lean-forward="false" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="42" />
+>>>>>>> f30b14ed0e68277e3447498aee7e1374fbdbbd20
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -835,6 +848,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
@@ -866,6 +880,8 @@
         <state relative-caret-position="705">
           <caret line="53" column="14" lean-forward="false" selection-start-line="53" selection-start-column="14" selection-end-line="53" selection-end-column="14" />
 =======
+=======
+>>>>>>> f30b14ed0e68277e3447498aee7e1374fbdbbd20
     <entry file="jar://$USER_HOME$/P1_IA/IA/Gasolina/Gasolina.jar!/IA/Gasolina/Distribucion.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -882,11 +898,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="76" lean-forward="false" selection-start-line="40" selection-start-column="67" selection-end-line="40" selection-end-column="76" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Estat.java">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="375">
           <caret line="25" column="53" lean-forward="true" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
 >>>>>>> 20ac219b113d6ba1df0450ca6a56720f17988841
+=======
+        <state relative-caret-position="720">
+          <caret line="48" column="42" lean-forward="false" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="42" />
+>>>>>>> f30b14ed0e68277e3447498aee7e1374fbdbbd20
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
