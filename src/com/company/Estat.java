@@ -10,8 +10,8 @@ import java.util.ArrayList;
 
 
 public class Estat {
-    static public ArrayList<Distribucion> camions = new ArrayList();
-    static public ArrayList<Peticio> peticions = new ArrayList();
+    static public Distribucion[] camions;
+    static public Peticio[] peticions;
 
     Dada_Camio[] dades_camio;
     boolean[] peticio_atesa;
