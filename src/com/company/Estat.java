@@ -46,7 +46,7 @@ public class Estat {
 
     // Afegeix peticio a un camió
     public void add(int c, int p){
-        Dada_Camio camio = dades_camio.get(c);
+        Dada_Camio camio = dades_camio[c];
         camio.afegir_peticio(p);
     }
 
