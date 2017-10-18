@@ -10,13 +10,16 @@ import java.util.ArrayList;
 
 
 public class Estat {
-    static public ArrayList<Distribucion> camion = new ArrayList();
+    static public ArrayList<Distribucion> camions = new ArrayList();
     static public ArrayList<Peticio> peticions = new ArrayList();
 
     Dada_Camio[] dades_camio;
     boolean[] peticio_atesa;
 
-    //Operadors
+    public Estat(Dada_Camio[] dades_camio, boolean[] peticio_atesa) {
+        this.dades_camio = dades_camio;
+        this.peticio_atesa = peticio_atesa;
+    }
 
     // Intercanvia les peticions entre camions
     public void swap(int c1, int c2, int viatge1, int viatge2, int peticio1, int peticio2){
