@@ -7,28 +7,28 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" exported="" name="Gasolina" level="project" />
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/Desktop/AIMA.jar!/" />
+          <root url="file://$USER_HOME$/Gasolina" />
+          <root url="file://$USER_HOME$/Gasolina" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="file://$USER_HOME$/Gasolina/javadoc" />
+        </JAVADOC>
+        <SOURCES />
+        <jarDirectory url="file://$USER_HOME$/Gasolina" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="jar://$USER_HOME$/dist/AIMA.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library" exported="">
-      <library>
-        <CLASSES>
-          <root url="file://$MODULE_DIR$/../Gasolina" />
-          <root url="file://$MODULE_DIR$/../Gasolina" />
-        </CLASSES>
-        <JAVADOC>
-          <root url="file://$MODULE_DIR$/../Gasolina/javadoc" />
-        </JAVADOC>
-        <SOURCES />
-        <jarDirectory url="file://$MODULE_DIR$/../Gasolina" recursive="false" />
-      </library>
-    </orderEntry>
+    <orderEntry type="library" name="AIMA" level="project" />
   </component>
 </module>

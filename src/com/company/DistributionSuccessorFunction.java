@@ -11,17 +11,29 @@ public class DistributionSuccessorFunction implements SuccessorFunction {
         Estat board = (Estat) state;
 
 
+
+        /**
         //c es index camió
-        for (int c = 0; c < board.mida_camions(); ++c) {
+        for (int c = 0; c < Estat.camions.length; ++c) {
             //p es index de peticions
-            for (int p = 0; p < board.mida_peticions(); ++p) {
-                //si petició no atesa l'afegim
-                if (!board.peticio_atesa[c]) {
-                    //add petcició
-                    if (board.check_add(c, p)) {
-                        Estat new_state = new Estat(parametres de la creadora_Estat);
-                        new_state.add(c, p);
-                        retval.add(new Successor(new String("add C:" + c + " P" + p), new_state));
+            for (int p = 0; p < Estat.peticions.length; ++p) {
+                //si petició i compleix no atesa l'afegim
+                if (board.check_add(c, p)) {
+                    Estat new_state = new Estat(board.dades_camio, board.peticio_atesa);
+                    new_state.add(c, p);
+                    retval.add(new Successor(new String("add C:" + c + " P" + p), new_state));
+                }
+                //sino mirem on la podem substituir
+                //en totes les posicions dels viatges camio
+                else {
+                    for (int v = 0; v < 5; ++v) {
+                        for (int i = 0; i < 2; ++i) {
+                            if (check_substituir(c, v, i, p)) {
+                                Estat new_state = new Estat(board.dades_camio, board.peticio_atesa);
+                                new_state.substituir(c, v, i, p);
+                                retval.add(new Successor(new String("subs C: " + c + " V: " + v + " I: " + " P: " + p), new_state));
+                            }
+                        }
                     }
                 }
             }
@@ -32,7 +44,7 @@ public class DistributionSuccessorFunction implements SuccessorFunction {
                 for (int i = 0; i < 2; ++i) {
 
                     //si no esta buida (es diferent a -1) procedim:
-                    if (board.GetCamioViatgePeticio(c, v, i)) {
+                    if (board.CamioViatgePeticio(c, v, i)) {
 
                         //mirem amb qui podem fer swap
                         //per cada camio2
@@ -44,7 +56,7 @@ public class DistributionSuccessorFunction implements SuccessorFunction {
                                 for (int j = 0; j < 2; ++j) {
                                     //podem fer swap:
                                     if (board.check_swap(c, v, i, c2, v2, j)) {
-                                        Estat new_state = new Estat(parametres de la creadora_Estat);
+                                        Estat new_state = new Estat(board.dades_camio, board.peticio_atesa);
                                         new_state.swap(c, v, i, c2, v2, j);
                                         retval.add(new Successor(new String("swap C: " + c + "  V: " + v + " " + i ";  C: " + c2 + "  V: " + v + " " + j), new_state));
                                     }
@@ -56,7 +68,26 @@ public class DistributionSuccessorFunction implements SuccessorFunction {
                 }
             }
         }
+        **/
 
+        for(int p=0; p<Estat.peticions.length; p++){
+            for (int c = 0; c < Estat.camions.length; ++c) {
+                for(int v=0; v<5; v++){
+                    Estat new_state = new Estat(board.dades_camio, board.peticio_atesa);
+                    if(new_state.replace(c,v,p)){
+                        retval.add(new Successor(new String("swap C: "), new_state));
+                    }
+                    Estat new_state2 = new Estat(board.dades_camio, board.peticio_atesa);
+                    if(new_state.swap_entre_viatges(c,v,1,p)){
+                        retval.add(new Successor(new String("swap C: "), new_state));
+                    }
+                    Estat new_state3 = new Estat(board.dades_camio, board.peticio_atesa);
+                    if(new_state.swap_entre_viatges(c,v,0,p)){
+                        retval.add(new Successor(new String("swap C: "), new_state));
+                    }
+                }
+            }
+        }
 
 
         return retval;

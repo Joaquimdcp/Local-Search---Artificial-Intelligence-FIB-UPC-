@@ -21,6 +21,8 @@ public class Estat {
         this.peticio_atesa = peticio_atesa;
     }
 
+    /**
+
     // Intercanvia les peticions entre camions
     public void swap(int c1, int c2, int viatge1, int viatge2, int peticio1, int peticio2){
         // peticio1 i peticio2 es refereixen a quina de les posicions és la que s'ha d'intercanviar la 0 o 1
@@ -52,13 +54,15 @@ public class Estat {
         Dada_Camio camio = dades_camio[c];
         camio.afegir_peticio(p);
     }
+     **/
 
     // Afegeix peticio fantasma
-    public void reemplaçar(int c1, int viatge1,int pos,int peticio_fantasma){
-
+    public boolean replace(int c, int v, int p){
+        return (dades_camio[c].replace_viatge(p,v));
     }
 
-    public
-
+    public boolean swap_entre_viatges(int c, int v, int p, int n){
+        return (dades_camio[c].swap_peticions(v,p,n));
+    }
 
 }
