@@ -26,9 +26,13 @@ public class Dada_Camio {
         this.id = id;
         benefici = 0;
         km = 0;
+        int i = 0;
         for (Pair v: viatges) {
+            v = new Pair();
             v.g1 = -1;
             v.g2 = -1;
+            viatges[i] = v;
+            i++;
         }
     }
 

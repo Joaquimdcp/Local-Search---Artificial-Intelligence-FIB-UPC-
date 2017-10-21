@@ -26,16 +26,16 @@ public class Estat {
     // Afegeix peticio fantasma
     public boolean replace(int c, int v, int p){
         Pair viatge = dades_camio[c].get_viatje(v);
-        peticio_atesa[viatge.g2] = false;
-        peticio_atesa[viatge.g1] = false;
-        peticio_atesa[p] = true;
+        if(viatge.g2 != -1) peticio_atesa[viatge.g2] = false;
+        if(viatge.g1 != -1) peticio_atesa[viatge.g1] = false;
+        if(p!=-1) peticio_atesa[p] = true;
         return (dades_camio[c].replace_viatge(p,v));
     }
 
     public boolean swap_entre_viatges(int c, int v, int p, int n){
         Pair viatge = dades_camio[c].get_viatje(v);
-        if(p==1) peticio_atesa[viatge.g2] = false;
-        else peticio_atesa[viatge.g1] = false;
+        if(p==1 && viatge.g2!=-1) peticio_atesa[viatge.g2] = false;
+        else if(viatge.g1!=-1) peticio_atesa[viatge.g1] = false;
         peticio_atesa[n] = true;
         return (dades_camio[c].swap_peticions(v,p,n));
     }

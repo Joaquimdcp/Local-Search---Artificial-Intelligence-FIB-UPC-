@@ -62,11 +62,14 @@ public class Main {
         Estat.camions = camions;
         Estat.peticions = peticions;
 
-        Estat estat = new Estat(dada_camios,peticions_ates);
+        Estat mapa = new Estat(dada_camios,peticions_ates);
 
-        Problem p = new Problem(estat, new DistributionSuccessorFunction(), new PGoalTest(), new PHeuristicFunction());;
+        Problem p = new Problem(mapa, new DistributionSuccessorFunction(), new PGoalTest(), new PHeuristicFunction());;
         Search search = new HillClimbingSearch();
         SearchAgent search_agent = new SearchAgent(p, search);
+
+        Estat e = (Estat) search.getGoalState();
+        System.out.println(e.heuristic());
 
 
     }
