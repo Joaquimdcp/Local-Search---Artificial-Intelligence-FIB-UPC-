@@ -11,33 +11,32 @@ public class DistributionSuccessorFunction implements SuccessorFunction {
         ArrayList retval = new ArrayList();
         Estat board = (Estat) state;
 
+        Estat new_state = new Estat(board.getDades_camio(), board.getPeticio_atesa());
 
-
-        /**
         //c es index camió
         for (int c = 0; c < Estat.camions.length; ++c) {
             //p es index de peticions
             for (int p = 0; p < Estat.peticions.length; ++p) {
+                new_state = new Estat(board.getDades_camio(), board.getPeticio_atesa());
                 //si petició i compleix no atesa l'afegim
-                if (board.check_add(c, p)) {
-                    Estat new_state = new Estat(board.dades_camio, board.peticio_atesa);
-                    new_state.add(c, p);
+                if (new_state.check_and_add(c, p)) {
                     retval.add(new Successor(new String("add C:" + c + " P" + p), new_state));
                 }
                 //sino mirem on la podem substituir
                 //en totes les posicions dels viatges camio
+
                 else {
                     for (int v = 0; v < 5; ++v) {
                         for (int i = 0; i < 2; ++i) {
-                            if (check_substituir(c, v, i, p)) {
-                                Estat new_state = new Estat(board.dades_camio, board.peticio_atesa);
-                                new_state.substituir(c, v, i, p);
-                                retval.add(new Successor(new String("subs C: " + c + " V: " + v + " I: " + " P: " + p), new_state));
+                            Estat new_state2 = new Estat(board.getDades_camio(), board.getPeticio_atesa());
+                            if (new_state2.swap_entre_viatges(c, v, i, p)) {
+                                //retval.add(new Successor(new String("subs C: " + c + " V: " + v + " I: " + " P: " + p), new_state2));
                             }
                         }
                     }
                 }
             }
+            /*
             //per cada viatge de camio
             for (int v = 0; v < 5; ++v) {
                 //per cada petició de viatge
@@ -68,13 +67,12 @@ public class DistributionSuccessorFunction implements SuccessorFunction {
                     }
                 }
             }
+            */
         }
-        **/
-
+/*
         for(int p=0; p<Estat.peticions.length; p++){
             for (int c = 0; c < Estat.camions.length; ++c) {
                 for(int v=0; v<5; v++){
-                    System.out.println(board.heuristic());
                     Estat new_state = new Estat(board.getDades_camio(), board.getPeticio_atesa());
                     if(new_state.replace(c,v,p)){
                         retval.add(new Successor(new String("swap C: "), new_state));
@@ -89,9 +87,8 @@ public class DistributionSuccessorFunction implements SuccessorFunction {
                     }
                 }
             }
-            System.out.println(board.heuristic());
         }
-
+*/
 
         return retval;
     }

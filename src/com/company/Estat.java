@@ -25,7 +25,6 @@ public class Estat {
         }
         this.peticio_atesa = new boolean[peticions.length];
         for (int i = 0; i < dades.length; ++i) {
-            peticio_atesa = new boolean[peticions.length];
             peticio_atesa[i] = peticions[i];
         }
     }
@@ -59,6 +58,18 @@ public class Estat {
             total += dades_camio[i].get_benefici();
         }
         return total;
+    }
+
+    public boolean check_and_add(int c, int p) {
+        if (peticio_atesa[p]) return false;
+        else {
+            boolean afegida = dades_camio[c].afegir_peticio(p);
+            if (afegida) {
+                peticio_atesa[p] = true;
+                return true;
+            }
+        }
+        return false;
     }
 
 }
