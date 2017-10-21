@@ -57,8 +57,7 @@ public class Main {
         Distribucion[] camions = new Distribucion[centros_dist.size()];
         int ide = 0;
         for(Distribucion dist: centros_dist){
-            Dada_Camio d = new Dada_Camio(id);
-            dada_camios[ide] = d;
+            dada_camios[ide] = new Dada_Camio(id);;
             camions[ide] = dist;
             ide += 1;
         }
