@@ -41,7 +41,7 @@ public class Estat {
     }
 
     public double heuristic(){
-        int total = 0;
+        double total = 0;
         for(int i=0; i<dades_camio.length; ++i){
             total += dades_camio[i].get_benefici();
         }
