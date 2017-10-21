@@ -11,30 +11,34 @@ public class DistributionSuccessorFunction implements SuccessorFunction {
         ArrayList retval = new ArrayList();
         Estat board = (Estat) state;
 
-        Estat new_state = new Estat(board.getDades_camio(), board.getPeticio_atesa());
-
         //c es index camió
         for (int c = 0; c < Estat.camions.length; ++c) {
             //p es index de peticions
             for (int p = 0; p < Estat.peticions.length; ++p) {
-                new_state = new Estat(board.getDades_camio(), board.getPeticio_atesa());
+                Estat new_state = new Estat(board.getDades_camio(), board.getPeticio_atesa());
                 //si petició i compleix no atesa l'afegim
                 if (new_state.check_and_add(c, p)) {
-                    retval.add(new Successor(new String("add C:" + c + " P" + p), new_state));
+                    for (int k = 0; k < new_state.peticio_atesa.length; ++k) {
+                        if (new_state.peticio_atesa[k]) System.out.print(1);
+                        else System.out.print(0);
+                    }
+                    System.out.println();
+                    retval.add(new Successor(new String("add C:" + c + " P:" + p), new_state));
                 }
                 //sino mirem on la podem substituir
                 //en totes les posicions dels viatges camio
 
+                /*
                 else {
                     for (int v = 0; v < 5; ++v) {
                         for (int i = 0; i < 2; ++i) {
                             Estat new_state2 = new Estat(board.getDades_camio(), board.getPeticio_atesa());
                             if (new_state2.swap_entre_viatges(c, v, i, p)) {
-                                //retval.add(new Successor(new String("subs C: " + c + " V: " + v + " I: " + " P: " + p), new_state2));
+                                retval.add(new Successor(new String("subs C: " + c + " V: " + v + " I: " + " P: " + p), new_state2));
                             }
                         }
                     }
-                }
+                }*/
             }
             /*
             //per cada viatge de camio

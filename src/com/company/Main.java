@@ -18,10 +18,10 @@ import java.util.Properties;
 public class Main {
 
     public static void main(String[] args) throws Exception {
-        int seed = 1234; // Seed per a generar num aleatori
-        int n_gas = 100; //Numero de gasolineres
+        int seed = 0; // Seed per a generar num aleatori
+        int n_gas = 150; //Numero de gasolineres
         int n_trucks = 1; // Numero de camions
-        int n_centros = 10;
+        int n_centros = 35;
 
 
         // Init les Gasolineres

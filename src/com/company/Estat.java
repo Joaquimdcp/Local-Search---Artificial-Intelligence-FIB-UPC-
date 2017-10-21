@@ -24,8 +24,8 @@ public class Estat {
            dades_camio[i] = new Dada_Camio(dades[i]);
         }
         this.peticio_atesa = new boolean[peticions.length];
-        for (int i = 0; i < dades.length; ++i) {
-            peticio_atesa[i] = peticions[i];
+        for (int i = 0; i < peticions.length; ++i) {
+            peticio_atesa[i] = new Boolean(peticions[i]);
         }
     }
 
@@ -64,12 +64,10 @@ public class Estat {
         if (peticio_atesa[p]) return false;
         else {
             boolean afegida = dades_camio[c].afegir_peticio(p);
-            if (afegida) {
-                peticio_atesa[p] = true;
-                return true;
-            }
+            peticio_atesa[p] = true;
+            System.out.println("C: " + c + " P: " + p + " : " + afegida);
+            return true;
         }
-        return false;
     }
 
 }
