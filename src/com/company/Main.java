@@ -16,9 +16,9 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
         int seed = 0; // Seed per a generar num aleatori
-        int n_gas = 5; //Numero de gasolineres
-        int n_trucks = 3; // Numero de camions
-        int n_centros = 2;
+        int n_gas = 100; //Numero de gasolineres
+        int n_trucks = 10; // Numero de camions
+        int n_centros = 10;
 
 
         // Init les Gasolineres
