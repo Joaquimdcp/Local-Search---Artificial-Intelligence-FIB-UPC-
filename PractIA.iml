@@ -30,5 +30,6 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="AIMA" level="project" />
+    <orderEntry type="library" name="Gasolina" level="project" />
   </component>
 </module>

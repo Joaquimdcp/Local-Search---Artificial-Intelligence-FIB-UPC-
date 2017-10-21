@@ -76,7 +76,6 @@ public class Dada_Camio {
             km = result;
             viatges[viatge].g1 = id_peticio;
             viatges[viatge].g2 = -1;
-            marcar_visitat(antic_viatge,nou_viatge);
             return true;
         }
         return false;
@@ -109,7 +108,6 @@ public class Dada_Camio {
             km = result_km;
             benefici += result_benefici;
             viatges[v] = nou_viatge;
-            marcar_visitat(antic_viatge,nou_viatge);
             return true;
         }
         return false;
@@ -165,9 +163,6 @@ public class Dada_Camio {
     }
      **/
 
-    private void marcar_visitat(Pair viatge_antic, Pair viatge_nou){
-
-    }
 
     private int calculate_km(Pair viatge){
         int x_gas,y_gas,x_dis,y_dis;
