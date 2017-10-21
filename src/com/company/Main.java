@@ -11,6 +11,9 @@ import aima.search.framework.SearchAgent;
 import aima.search.informed.HillClimbingSearch;
 
 import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Properties;
 
 public class Main {
 
@@ -71,6 +74,29 @@ public class Main {
         Estat e = (Estat) search.getGoalState();
         System.out.println(e.heuristic());
 
+        System.out.println();
+        printActions(search_agent.getActions());
+        printInstrumentation(search_agent.getInstrumentation());
+
 
     }
+
+    private static void printInstrumentation(Properties properties) {
+        Iterator keys = properties.keySet().iterator();
+        while (keys.hasNext()) {
+            String key = (String) keys.next();
+            String property = properties.getProperty(key);
+            System.out.println(key + " : " + property);
+        }
+
+    }
+
+    private static void printActions(List actions) {
+        for (int i = 0; i < actions.size(); i++) {
+            String action = (String) actions.get(i);
+            System.out.println(action);
+        }
+    }
+
+
 }
