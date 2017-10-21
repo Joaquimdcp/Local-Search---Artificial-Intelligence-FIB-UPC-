@@ -15,13 +15,22 @@ public class Estat {
     static public Distribucion[] camions;
     static public Peticio[] peticions;
 
-    Dada_Camio[] dades_camio;
-    boolean[] peticio_atesa;
+    public Dada_Camio[] dades_camio;
+    public boolean[] peticio_atesa;
 
-    public Estat(Dada_Camio[] dades_camio, boolean[] peticio_atesa) {
-        this.dades_camio = dades_camio;
+    public Estat(Dada_Camio[] dades, boolean[] peticions) {
+        this.dades_camio = new Dada_Camio[dades.length];
+        for (int i = 0; i < dades.length; ++i) {
+           dades_camio[i] = new Dada_Camio(dades[i]);
+        }
         this.peticio_atesa = peticio_atesa;
     }
+
+    public Dada_Camio[] getDades_camio() {
+        return dades_camio;
+    }
+
+    public boolean[] getPeticio_atesa() {return peticio_atesa;}
 
     // Afegeix peticio fantasma
     public boolean replace(int c, int v, int p){

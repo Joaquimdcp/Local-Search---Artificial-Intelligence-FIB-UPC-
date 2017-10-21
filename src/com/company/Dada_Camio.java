@@ -8,10 +8,6 @@ import java.util.ArrayList;
 
 import static java.lang.Math.abs;
 
-class Pair {
-    public int g1, g2;
-}
-
 
 public class Dada_Camio {
 
@@ -29,8 +25,6 @@ public class Dada_Camio {
         int i = 0;
         for (Pair v: viatges) {
             v = new Pair();
-            v.g1 = -1;
-            v.g2 = -1;
             viatges[i] = v;
             i++;
         }

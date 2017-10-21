@@ -1,4 +1,5 @@
 package com.company;
+import IA.Connectat.ES;
 import aima.search.framework.SuccessorFunction;
 import aima.search.framework.Successor;
 
@@ -73,20 +74,21 @@ public class DistributionSuccessorFunction implements SuccessorFunction {
         for(int p=0; p<Estat.peticions.length; p++){
             for (int c = 0; c < Estat.camions.length; ++c) {
                 for(int v=0; v<5; v++){
-                    Estat new_state = new Estat(board.dades_camio, board.peticio_atesa);
+                    Estat new_state = new Estat(board.getDades_camio(), board.getPeticio_atesa());
                     if(new_state.replace(c,v,p)){
                         retval.add(new Successor(new String("swap C: "), new_state));
                     }
-                    Estat new_state2 = new Estat(board.dades_camio, board.peticio_atesa);
-                    if(new_state.swap_entre_viatges(c,v,1,p)){
-                        retval.add(new Successor(new String("swap C: "), new_state));
+                    Estat new_state2 = new Estat(board.getDades_camio(), board.getPeticio_atesa());
+                    if(new_state2.swap_entre_viatges(c,v,1,p)){
+                        retval.add(new Successor(new String("swap C: "), new_state2));
                     }
-                    Estat new_state3 = new Estat(board.dades_camio, board.peticio_atesa);
-                    if(new_state.swap_entre_viatges(c,v,0,p)){
-                        retval.add(new Successor(new String("swap C: "), new_state));
+                    Estat new_state3 = new Estat(board.getDades_camio(), board.getPeticio_atesa());
+                    if(new_state3.swap_entre_viatges(c,v,0,p)){
+                        retval.add(new Successor(new String("swap C: "), new_state3));
                     }
                 }
             }
+            System.out.println(board.heuristic());
         }
 
 
