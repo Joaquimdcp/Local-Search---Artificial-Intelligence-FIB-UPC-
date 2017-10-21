@@ -11,6 +11,8 @@ public class DistributionSuccessorFunction implements SuccessorFunction {
         Estat board = (Estat) state;
 
 
+
+        /**
         //c es index camió
         for (int c = 0; c < Estat.camions.length; ++c) {
             //p es index de peticions
@@ -66,7 +68,26 @@ public class DistributionSuccessorFunction implements SuccessorFunction {
                 }
             }
         }
+        **/
 
+        for(int p=0; p<Estat.peticions.length; p++){
+            for (int c = 0; c < Estat.camions.length; ++c) {
+                for(int v=0; v<5; v++){
+                    Estat new_state = new Estat(board.dades_camio, board.peticio_atesa);
+                    if(new_state.replace(c,v,p)){
+                        retval.add(new Successor(new String("swap C: "), new_state));
+                    }
+                    Estat new_state2 = new Estat(board.dades_camio, board.peticio_atesa);
+                    if(new_state.swap_entre_viatges(c,v,1,p)){
+                        retval.add(new Successor(new String("swap C: "), new_state));
+                    }
+                    Estat new_state3 = new Estat(board.dades_camio, board.peticio_atesa);
+                    if(new_state.swap_entre_viatges(c,v,0,p)){
+                        retval.add(new Successor(new String("swap C: "), new_state));
+                    }
+                }
+            }
+        }
 
 
         return retval;

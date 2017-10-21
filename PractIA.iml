@@ -10,14 +10,14 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="file://$MODULE_DIR$/../Gasolina" />
-          <root url="file://$MODULE_DIR$/../Gasolina" />
+          <root url="file://$USER_HOME$/Gasolina" />
+          <root url="file://$USER_HOME$/Gasolina" />
         </CLASSES>
         <JAVADOC>
-          <root url="file://$MODULE_DIR$/../Gasolina/javadoc" />
+          <root url="file://$USER_HOME$/Gasolina/javadoc" />
         </JAVADOC>
         <SOURCES />
-        <jarDirectory url="file://$MODULE_DIR$/../Gasolina" recursive="false" />
+        <jarDirectory url="file://$USER_HOME$/Gasolina" recursive="false" />
       </library>
     </orderEntry>
     <orderEntry type="module-library" exported="">

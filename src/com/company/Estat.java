@@ -2,11 +2,13 @@ package com.company;
 
 import IA.Gasolina.CentrosDistribucion;
 import IA.Gasolina.Distribucion;
+import IA.Gasolina.Gasolinera;
 import IA.Gasolina.Gasolineras;
 import com.sun.org.apache.xpath.internal.operations.Bool;
 import IA.Gasolina.Gasolinera;
 
 import java.util.ArrayList;
+import com.company.Peticio;
 
 
 public class Estat {
@@ -21,44 +23,29 @@ public class Estat {
         this.peticio_atesa = peticio_atesa;
     }
 
-    // Intercanvia les peticions entre camions
-    public void swap(int c1, int c2, int viatge1, int viatge2, int peticio1, int peticio2){
-        // peticio1 i peticio2 es refereixen a quina de les posicions és la que s'ha d'intercanviar la 0 o 1
-        Dada_Camio camio1 = dades_camio[c1];
-        Dada_Camio camio2 = dades_camio[c2];
-        Pair p = dades_camio[c1].get_viatje(viatge1);
-        Pair p2 = dades_camio[c1].get_viatje(viatge2);
-        int pet = 0;
-        if(peticio1==0) {
-            pet = p.g1;
-        }
-        else{
-            pet = p.g2;
-        }
-        int pet1 = 0;
-        if(peticio2==0){
-            pet1 = p2.g1;
-        }
-        else{
-            pet1 = p2.g2;
-        }
-
-        dades_camio[c1].afegir_peticio(pet1,viatge1);
-        dades_camio[c2].afegir_peticio(pet, viatge2);
-    }
-
-    // Afegeix peticio a un camió
-    public void add(int c, int p){
-        Dada_Camio camio = dades_camio[c];
-        camio.afegir_peticio(p);
-    }
-
     // Afegeix peticio fantasma
-    public void reemplaçar(int c1, int viatge1,int pos,int peticio_fantasma){
-
+    public boolean replace(int c, int v, int p){
+        Pair viatge = dades_camio[c].get_viatje(v);
+        if(viatge.g2 != -1) peticio_atesa[viatge.g2] = false;
+        if(viatge.g1 != -1) peticio_atesa[viatge.g1] = false;
+        if(p!=-1) peticio_atesa[p] = true;
+        return (dades_camio[c].replace_viatge(p,v));
     }
 
-    public
+    public boolean swap_entre_viatges(int c, int v, int p, int n){
+        Pair viatge = dades_camio[c].get_viatje(v);
+        if(p==1 && viatge.g2!=-1) peticio_atesa[viatge.g2] = false;
+        else if(viatge.g1!=-1) peticio_atesa[viatge.g1] = false;
+        peticio_atesa[n] = true;
+        return (dades_camio[c].swap_peticions(v,p,n));
+    }
 
+    public double heuristic(){
+        int total = 0;
+        for(int i=0; i<dades_camio.length; ++i){
+            total += dades_camio[i].get_benefici();
+        }
+        return total;
+    }
 
 }

@@ -26,9 +26,13 @@ public class Dada_Camio {
         this.id = id;
         benefici = 0;
         km = 0;
+        int i = 0;
         for (Pair v: viatges) {
+            v = new Pair();
             v.g1 = -1;
             v.g2 = -1;
+            viatges[i] = v;
+            i++;
         }
     }
 
@@ -62,7 +66,60 @@ public class Dada_Camio {
 
     //Altres
 
+    //reemplacem el viatge complet per un que només serveix una petició concreta
+    public boolean replace_viatge(int id_peticio, int viatge){
+        Pair antic_viatge = viatges[viatge];
+        int antic_km = calculate_km(antic_viatge);
+        Pair nou_viatge = new Pair();
+        nou_viatge.g1 = id_peticio;
+        nou_viatge.g2 = -1;
+        int now_km = calculate_km(nou_viatge);
+        int result = km+now_km-antic_km;
 
+        if(km+now_km-antic_km<=640) {
+            km = result;
+            viatges[viatge].g1 = id_peticio;
+            viatges[viatge].g2 = -1;
+            return true;
+        }
+        return false;
+
+
+    }
+
+
+    public boolean swap_peticions(int v, int pos, int peticio){
+        Pair antic_viatge = viatges[v];
+        int antic_km = calculate_km(antic_viatge);
+        int antic_benefici = benefici;
+
+        Pair nou_viatge = new Pair();
+        if(pos==0) {
+            nou_viatge.g1 = antic_viatge.g1;
+            nou_viatge.g2 = -1;
+        }
+        else{
+            nou_viatge.g1 = peticio;
+            nou_viatge.g2 = antic_viatge.g2;
+        }
+        int nou_km = calculate_km(nou_viatge);
+        int now_benefici = calculate_benefici(nou_viatge, nou_km);
+
+        int result_km = km+nou_km-antic_km;
+        int result_benefici = now_benefici-antic_benefici;
+
+        if(result_km<=640 && result_benefici>0) {
+            km = result_km;
+            benefici += result_benefici;
+            viatges[v] = nou_viatge;
+            return true;
+        }
+        return false;
+    }
+
+
+
+    /**
     //afegeix peticio amb id == id_peticio al viatge v
     //retorna true si s'ha pogut afegir la peticio al viatge i false altrament
     public boolean afegir_peticio(int id_peticio, int v) {
@@ -99,7 +156,6 @@ public class Dada_Camio {
     }
 
 
-
     //private functions
 
 
@@ -108,6 +164,42 @@ public class Dada_Camio {
         int guanys = 0;
         //falta
 
+    }
+     **/
+
+
+    private int calculate_km(Pair viatge){
+        int x_gas,y_gas,x_dis,y_dis;
+        int km_viatge = 0;
+        if (viatge.g1 != -1){
+            x_gas = Estat.peticions[viatge.g1].getX();
+            y_gas = Estat.peticions[viatge.g1].getY();
+            x_dis = Estat.camions[id].getCoordX();
+            y_dis = Estat.camions[id].getCoordY();
+            km += 2*(abs(x_dis - x_gas) + abs(y_dis - y_gas));
+        }
+        if (viatge.g2 != -1){
+            x_gas = Estat.peticions[viatge.g2].getX();
+            y_gas = Estat.peticions[viatge.g2].getY();
+            x_dis = Estat.camions[id].getCoordX();
+            y_dis = Estat.camions[id].getCoordY();
+            km += 2*(abs(x_dis - x_gas) + abs(y_dis - y_gas));
+        }
+        if (viatge.g1 != -1 && viatge.g2 != -1 ){
+            x_gas = Estat.peticions[viatge.g2].getX();
+            y_gas = Estat.peticions[viatge.g2].getY();
+            x_dis = Estat.peticions[viatge.g2].getX();
+            y_dis = Estat.peticions[viatge.g2].getY();
+            km += (abs(x_dis - x_gas) + abs(y_dis - y_gas));
+        }
+        return km_viatge;
+    }
+
+    private int calculate_benefici(Pair viatge, int km){
+        int peticions_ateses = 0;
+        if(viatge.g1!=-1) peticions_ateses+=1;
+        if(viatge.g2!=-1) peticions_ateses+=1;
+        return (peticions_ateses*1000 - km*2);
     }
 
 
