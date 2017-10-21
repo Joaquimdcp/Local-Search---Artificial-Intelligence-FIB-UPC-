@@ -23,7 +23,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../AIMA.jar!/" />
+          <root url="jar://$MODULE_DIR$/../dist/AIMA.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -32,7 +32,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../../Gasolina/Gasolina.jar!/" />
+          <root url="jar://$MODULE_DIR$/../Gasolina/Gasolina.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
