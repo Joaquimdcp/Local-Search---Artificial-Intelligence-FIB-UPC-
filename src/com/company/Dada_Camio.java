@@ -176,21 +176,19 @@ public class Dada_Camio {
             y_gas = Estat.peticions[viatge.g1].getY();
             x_dis = Estat.camions[id].getCoordX();
             y_dis = Estat.camions[id].getCoordY();
-            km += 2*(abs(x_dis - x_gas) + abs(y_dis - y_gas));
+            km_viatge += abs(x_dis - x_gas) + abs(y_dis - y_gas);
+            if (viatge.g2 != -1) {
+                int x_gas2 = Estat.peticions[viatge.g2].getX();
+                int y_gas2 = Estat.peticions[viatge.g2].getY();
+                km_viatge += abs(x_gas - x_gas2) + abs(y_gas - y_gas2) + abs(x_gas2 - x_dis) + abs(y_gas2 - y_dis);
+            }
         }
-        if (viatge.g2 != -1){
+        else if (viatge.g2 != -1) {
             x_gas = Estat.peticions[viatge.g2].getX();
             y_gas = Estat.peticions[viatge.g2].getY();
             x_dis = Estat.camions[id].getCoordX();
             y_dis = Estat.camions[id].getCoordY();
-            km += 2*(abs(x_dis - x_gas) + abs(y_dis - y_gas));
-        }
-        if (viatge.g1 != -1 && viatge.g2 != -1 ){
-            x_gas = Estat.peticions[viatge.g2].getX();
-            y_gas = Estat.peticions[viatge.g2].getY();
-            x_dis = Estat.peticions[viatge.g2].getX();
-            y_dis = Estat.peticions[viatge.g2].getY();
-            km += (abs(x_dis - x_gas) + abs(y_dis - y_gas));
+            km_viatge += 2*(abs(x_dis - x_gas) + abs(y_dis - y_gas));
         }
         return km_viatge;
     }

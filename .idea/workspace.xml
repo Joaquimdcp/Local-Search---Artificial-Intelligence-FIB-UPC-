@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="676c2d33-1426-48ad-a3a2-196e616b6ec6" name="Default" comment="">
-        HEAD
-        HEAD
-        HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-<<<<<<< HEAD
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/Dada_Camio.java" afterPath="$PROJECT_DIR$/src/com/company/Dada_Camio.java" />
-=======
-=======
->>>>>>> f30b14ed0e68277e3447498aee7e1374fbdbbd20
-=======
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
->>>>>>> cec82e93ff4024a17eb2cc0a50d888ce47ea3826
-=======
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/Dada_Camio.java" afterPath="$PROJECT_DIR$/src/com/company/Dada_Camio.java" />
->>>>>>> f6f9484e92761e3b8a6f928d9873b93e9ad5e7cb
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/Estat.java" afterPath="$PROJECT_DIR$/src/com/company/Estat.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/Main.java" afterPath="$PROJECT_DIR$/src/com/company/Main.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -28,32 +14,14 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-            <state relative-caret-position="705">
-              <caret line="53" column="14" lean-forward="false" selection-start-line="53" selection-start-column="14" selection-end-line="53" selection-end-column="14" />
-=======
-            <state relative-caret-position="660">
-              <caret line="44" column="18" lean-forward="false" selection-start-line="44" selection-start-column="12" selection-end-line="44" selection-end-column="18" />
->>>>>>> 20ac219b113d6ba1df0450ca6a56720f17988841
-=======
-            <state relative-caret-position="600">
-=======
-            <state relative-caret-position="525">
->>>>>>> cec82e93ff4024a17eb2cc0a50d888ce47ea3826
-              <caret line="40" column="76" lean-forward="false" selection-start-line="40" selection-start-column="67" selection-end-line="40" selection-end-column="76" />
->>>>>>> f30b14ed0e68277e3447498aee7e1374fbdbbd20
-=======
-            <state relative-caret-position="273">
-              <caret line="61" column="32" lean-forward="false" selection-start-line="61" selection-start-column="8" selection-end-line="61" selection-end-column="32" />
->>>>>>> f6f9484e92761e3b8a6f928d9873b93e9ad5e7cb
+            <state relative-caret-position="255">
+              <caret line="17" column="20" lean-forward="false" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -61,15 +29,32 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="CentrosDistribucion.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/../Gasolina/Gasolina.jar!/IA/Gasolina/CentrosDistribucion.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Distribucion.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/../Gasolina/Gasolina.jar!/IA/Gasolina/Distribucion.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="PGoalTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/PGoalTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-              <folding>
-                <element signature="e#150#151#0" expanded="true" />
-                <element signature="e#178#179#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="90">
+              <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -87,46 +72,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HillClimbingSearch.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/Desktop/AIMA.jar!/aima/search/informed/HillClimbingSearch.class">
+      <file leaf-file-name="Dada_Camio.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/company/Dada_Camio.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="795">
-              <caret line="63" column="39" lean-forward="false" selection-start-line="63" selection-start-column="39" selection-end-line="63" selection-end-column="39" />
+            <state relative-caret-position="333">
+              <caret line="199" column="46" lean-forward="true" selection-start-line="199" selection-start-column="46" selection-end-line="199" selection-end-column="46" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Problem.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/Desktop/AIMA.jar!/aima/search/framework/Problem.class">
+      <file leaf-file-name="DistributionSuccessorFunction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/DistributionSuccessorFunction.java">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-            <state relative-caret-position="375">
-              <caret line="25" column="53" lean-forward="true" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
->>>>>>> 20ac219b113d6ba1df0450ca6a56720f17988841
-=======
-            <state relative-caret-position="720">
-              <caret line="48" column="42" lean-forward="false" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="42" />
->>>>>>> f30b14ed0e68277e3447498aee7e1374fbdbbd20
-=======
-            <state relative-caret-position="330">
-              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
->>>>>>> e30e36cec855676751c496e11ba147fc38714457
-=======
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
->>>>>>> cec82e93ff4024a17eb2cc0a50d888ce47ea3826
+            <state relative-caret-position="-418">
+              <caret line="42" column="22" lean-forward="false" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-=======
-            <state relative-caret-position="135">
-              <caret line="12" column="39" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="39" />
-              <folding />
->>>>>>> f6f9484e92761e3b8a6f928d9873b93e9ad5e7cb
             </state>
           </provider>
         </entry>
@@ -141,83 +104,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DistributionSuccessorFunction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/DistributionSuccessorFunction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="78" column="21" lean-forward="true" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Estat.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Estat.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Estat.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="705">
-              <caret line="47" column="21" lean-forward="false" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="21" />
+            <state relative-caret-position="660">
+              <caret line="44" column="18" lean-forward="true" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="11820">
-              <caret line="788" column="50" lean-forward="false" selection-start-line="788" selection-start-column="50" selection-end-line="788" selection-end-column="50" />
-              <folding>
-                <marker date="1508579681867" expanded="true" signature="60817:60834" ph="..." />
-                <marker date="1508579681867" expanded="true" signature="60817:60852" ph="..." />
-                <marker date="1508579681867" expanded="true" signature="60817:60865" ph="..." />
-                <marker date="1508579681867" expanded="true" signature="60817:60880" ph="..." />
-                <marker date="1508579681867" expanded="true" signature="60915:63107" ph="..." />
-                <marker date="1508579681867" expanded="true" signature="60928:63092" ph="..." />
-                <marker date="1508579681867" expanded="true" signature="60982:61277" ph="..." />
-                <marker date="1508579681867" expanded="true" signature="61001:61262" ph="..." />
-                <marker date="1508579681867" expanded="true" signature="61064:61242" ph="..." />
-                <marker date="1508579681867" expanded="true" signature="61104:61208" ph="..." />
-                <marker date="1508579681867" expanded="true" signature="61125:61186" ph="..." />
-                <marker date="1508579681867" expanded="true" signature="61327:61654" ph="..." />
-                <marker date="1508579681867" expanded="true" signature="61346:61639" ph="..." />
-                <marker date="1508579681867" expanded="true" signature="61441:61619" ph="..." />
-                <marker date="1508579681867" expanded="true" signature="61481:61585" ph="..." />
-                <marker date="1508579681867" expanded="true" signature="61502:61563" ph="..." />
-                <marker date="1508579681867" expanded="true" signature="61705:61970" ph="..." />
-                <marker date="1508579681867" expanded="true" signature="61724:61955" ph="..." />
-                <marker date="1508579681867" expanded="true" signature="61757:61935" ph="..." />
-                <marker date="1508579681867" expanded="true" signature="61797:61901" ph="..." />
-                <marker date="1508579681867" expanded="true" signature="61818:61879" ph="..." />
-                <marker date="1508579681867" expanded="true" signature="62013:62319" ph="..." />
-                <marker date="1508579681867" expanded="true" signature="62032:62304" ph="..." />
-                <marker date="1508579681867" expanded="true" signature="62106:62284" ph="..." />
-                <marker date="1508579681867" expanded="true" signature="62146:62250" ph="..." />
-                <marker date="1508579681867" expanded="true" signature="62167:62228" ph="..." />
-                <marker date="1508579681867" expanded="true" signature="62370:62719" ph="..." />
-                <marker date="1508579681867" expanded="true" signature="62389:62704" ph="..." />
-                <marker date="1508579681867" expanded="true" signature="62467:62684" ph="..." />
-                <marker date="1508579681867" expanded="true" signature="62507:62650" ph="..." />
-                <marker date="1508579681867" expanded="true" signature="62528:62628" ph="..." />
-                <marker date="1508579681867" expanded="true" signature="62771:63078" ph="..." />
-                <marker date="1508579681867" expanded="true" signature="62790:63063" ph="..." />
-                <marker date="1508579681867" expanded="true" signature="62865:63043" ph="..." />
-                <marker date="1508579681867" expanded="true" signature="62905:63009" ph="..." />
-                <marker date="1508579681867" expanded="true" signature="62926:62987" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Dada_Camio.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/company/Dada_Camio.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-44">
-              <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -234,6 +128,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>Peticio</find>
+      <find>print</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -251,22 +146,21 @@
         <option value="$PROJECT_DIR$/src/com/company/SuccesorFunction.java" />
         <option value="$PROJECT_DIR$/src/com/company/SuccessorFunction.java" />
         <option value="$PROJECT_DIR$/src/com/company/Camio.java" />
-        <option value="$PROJECT_DIR$/src/com/company/DistributionSuccessorFunction.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/src/com/company/Peticio.java" />
         <option value="$PROJECT_DIR$/src/com/company/PGoalTest.java" />
         <option value="$PROJECT_DIR$/src/com/company/PHeuristicFunction.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Dada_Camio.java" />
         <option value="$PROJECT_DIR$/src/com/company/Estat.java" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/src/com/company/DistributionSuccessorFunction.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Dada_Camio.java" />
         <option value="$PROJECT_DIR$/src/com/company/Main.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="25" />
-    <option name="width" value="960" />
-    <option name="height" value="1055" />
+  <component name="ProjectFrameBounds">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -284,89 +178,105 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
-          <expand>
-            <path>
-              <item name="PractIA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PractIA" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PractIA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PractIA" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PractIA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PractIA" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PractIA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PractIA" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="company" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PractIA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PractIA" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="company" type="462c0819:PsiDirectoryNode" />
-              <item name="Dada_Camio.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </path>
-            <path>
-              <item name="PractIA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="PractIA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gasolina.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PractIA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gasolina.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="Gasolina" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PractIA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gasolina.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="PractIA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gasolina" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="PractIA" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gasolina" type="70bed36:NamedLibraryElementNode" />
-              <item name="Gasolina.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IA-practica-1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IA-practica-1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gasolina.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IA-practica-1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gasolina.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gasolina" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IA-practica-1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IA-practica-1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IA-practica-1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IA-practica-1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="company" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IA-practica-1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IA-practica-1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="company" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Dada_Camio.java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
       <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-=======
       <pane id="PackagesPane" />
       <pane id="Scope" />
->>>>>>> 20ac219b113d6ba1df0450ca6a56720f17988841
-=======
->>>>>>> cec82e93ff4024a17eb2cc0a50d888ce47ea3826
-=======
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
->>>>>>> f6f9484e92761e3b8a6f928d9873b93e9ad5e7cb
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -389,7 +299,7 @@
     </option>
   </component>
   <component name="RunManager" selected="Application.Main">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+    <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
       <option name="VM_PARAMETERS" value="" />
@@ -404,6 +314,7 @@
       <envs />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
+      <method />
     </configuration>
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="" />
@@ -586,6 +497,9 @@
       <listeners />
       <method />
     </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Application.Main" />
+    </list>
     <recent_temporary>
       <list size="1">
         <item index="0" class="java.lang.String" itemvalue="Application.Main" />
@@ -611,23 +525,25 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="25" width="1922" height="1056" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32845187" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.10520833" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26895565" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -635,10 +551,8 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -681,65 +595,19 @@
     <breakpoint-manager />
     <watches-manager />
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/Gasolina/Gasolina.jar!/IA/Gasolina/Distribucion.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Gasolina/Gasolina.jar!/IA/Gasolina/CentrosDistribucion.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="21" column="28" lean-forward="false" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Gasolina/Gasolina.jar!/IA/Gasolina/Gasolineras.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Gasolina/Gasolina.jar!/IA/Gasolina/Gasolinera.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$USER_HOME$/Gasolina/Gasolina.jar!/IA/Gasolina/Gasolineras.class" />
+    <entry file="jar://$USER_HOME$/Gasolina/Gasolina.jar!/IA/Gasolina/Gasolinera.class" />
     <entry file="file://$PROJECT_DIR$/src/com/company/Camio.java" />
     <entry file="file://$PROJECT_DIR$/out/production/PractIA/com/company/DistributionSuccessorFunction.class" />
-    <entry file="jar://$USER_HOME$/Gasolina/Gasolina.jar!/IA/Gasolina/Distribucion.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Gasolina/Gasolina.jar!/IA/Gasolina/CentrosDistribucion.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="21" column="28" lean-forward="true" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Gasolina/Gasolina.jar!/IA/Gasolina/Gasolineras.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Gasolina/Gasolina.jar!/IA/Gasolina/Gasolinera.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="12" column="23" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="12" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$USER_HOME$/Gasolina/Gasolina.jar!/IA/Gasolina/Distribucion.class" />
+    <entry file="jar://$USER_HOME$/Gasolina/Gasolina.jar!/IA/Gasolina/CentrosDistribucion.class" />
+    <entry file="jar://$USER_HOME$/Gasolina/Gasolina.jar!/IA/Gasolina/Gasolineras.class" />
+    <entry file="jar://$USER_HOME$/Gasolina/Gasolina.jar!/IA/Gasolina/Gasolinera.class" />
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -786,20 +654,8 @@
     <entry file="jar://$USER_HOME$/P1_IA/IA/Gasolina/Gasolina.jar!/IA/Gasolina/Distribucion.class" />
     <entry file="jar://$USER_HOME$/P1_IA/IA/Gasolina/Gasolina.jar!/IA/Gasolina/Gasolineras.class" />
     <entry file="jar://$USER_HOME$/P1_IA/IA/Gasolina/Gasolina.jar!/IA/Gasolina/Gasolinera.class" />
-    <entry file="jar://$USER_HOME$/P1_IA/IA/Gasolina/Gasolina.jar!/IA/Gasolina/Gasolinera.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="36" column="11" lean-forward="false" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/P1_IA/IA/Gasolina/Gasolina.jar!/IA/Gasolina/Gasolineras.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="51" column="16" lean-forward="false" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$USER_HOME$/P1_IA/IA/Gasolina/Gasolina.jar!/IA/Gasolina/Gasolinera.class" />
+    <entry file="jar://$USER_HOME$/P1_IA/IA/Gasolina/Gasolina.jar!/IA/Gasolina/Gasolineras.class" />
     <entry file="jar://$USER_HOME$/P1_IA/IA/Gasolina/Gasolina.jar!/IA/Gasolina/CentrosDistribucion.class" />
     <entry file="file://$PROJECT_DIR$/src/com/company/SuccesorFunction.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/SuccessorFunction.java" />
@@ -814,99 +670,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/out/production/PractIA/com/company/DistributionSuccessorFunction.class" />
     <entry file="file://$PROJECT_DIR$/src/com/company/Camio.java" />
-    <entry file="jar://$USER_HOME$/Gasolina/Gasolina.jar!/IA/Gasolina/Distribucion.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Gasolina/Gasolina.jar!/IA/Gasolina/Gasolinera.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="40" column="59" lean-forward="false" selection-start-line="40" selection-start-column="49" selection-end-line="40" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Gasolina/Gasolina.jar!/IA/Gasolina/Test.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="20" column="71" lean-forward="false" selection-start-line="20" selection-start-column="71" selection-end-line="20" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/P1_IA/IA/Gasolina/Gasolina.jar!/IA/Gasolina/Distribucion.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Gasolina/Gasolina.jar!/IA/Gasolina/CentrosDistribucion.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="14" column="55" lean-forward="false" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Gasolina/Gasolina.jar!/IA/Gasolina/Gasolineras.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$USER_HOME$/Gasolina/Gasolina.jar!/IA/Gasolina/Distribucion.class" />
+    <entry file="jar://$USER_HOME$/Gasolina/Gasolina.jar!/IA/Gasolina/Gasolinera.class" />
+    <entry file="jar://$USER_HOME$/Gasolina/Gasolina.jar!/IA/Gasolina/Test.class" />
+    <entry file="jar://$USER_HOME$/P1_IA/IA/Gasolina/Gasolina.jar!/IA/Gasolina/Distribucion.class" />
+    <entry file="jar://$USER_HOME$/Gasolina/Gasolina.jar!/IA/Gasolina/CentrosDistribucion.class" />
+    <entry file="jar://$USER_HOME$/Gasolina/Gasolina.jar!/IA/Gasolina/Gasolineras.class" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="705">
           <caret line="47" column="19" lean-forward="false" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
+    <entry file="jar://$USER_HOME$/Desktop/AIMA.jar!/aima/search/informed/HillClimbingSearch.class" />
+    <entry file="jar://$USER_HOME$/Desktop/AIMA.jar!/aima/search/framework/Problem.class" />
+    <entry file="file://$PROJECT_DIR$/src/com/company/GoalTest.java" />
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11820">
-          <caret line="788" column="50" lean-forward="false" selection-start-line="788" selection-start-column="50" selection-end-line="788" selection-end-column="50" />
-          <folding>
-            <marker date="1508579681867" expanded="true" signature="60817:60834" ph="..." />
-            <marker date="1508579681867" expanded="true" signature="60817:60852" ph="..." />
-            <marker date="1508579681867" expanded="true" signature="60817:60865" ph="..." />
-            <marker date="1508579681867" expanded="true" signature="60817:60880" ph="..." />
-            <marker date="1508579681867" expanded="true" signature="60915:63107" ph="..." />
-            <marker date="1508579681867" expanded="true" signature="60928:63092" ph="..." />
-            <marker date="1508579681867" expanded="true" signature="60982:61277" ph="..." />
-            <marker date="1508579681867" expanded="true" signature="61001:61262" ph="..." />
-            <marker date="1508579681867" expanded="true" signature="61064:61242" ph="..." />
-            <marker date="1508579681867" expanded="true" signature="61104:61208" ph="..." />
-            <marker date="1508579681867" expanded="true" signature="61125:61186" ph="..." />
-            <marker date="1508579681867" expanded="true" signature="61327:61654" ph="..." />
-            <marker date="1508579681867" expanded="true" signature="61346:61639" ph="..." />
-            <marker date="1508579681867" expanded="true" signature="61441:61619" ph="..." />
-            <marker date="1508579681867" expanded="true" signature="61481:61585" ph="..." />
-            <marker date="1508579681867" expanded="true" signature="61502:61563" ph="..." />
-            <marker date="1508579681867" expanded="true" signature="61705:61970" ph="..." />
-            <marker date="1508579681867" expanded="true" signature="61724:61955" ph="..." />
-            <marker date="1508579681867" expanded="true" signature="61757:61935" ph="..." />
-            <marker date="1508579681867" expanded="true" signature="61797:61901" ph="..." />
-            <marker date="1508579681867" expanded="true" signature="61818:61879" ph="..." />
-            <marker date="1508579681867" expanded="true" signature="62013:62319" ph="..." />
-            <marker date="1508579681867" expanded="true" signature="62032:62304" ph="..." />
-            <marker date="1508579681867" expanded="true" signature="62106:62284" ph="..." />
-            <marker date="1508579681867" expanded="true" signature="62146:62250" ph="..." />
-            <marker date="1508579681867" expanded="true" signature="62167:62228" ph="..." />
-            <marker date="1508579681867" expanded="true" signature="62370:62719" ph="..." />
-            <marker date="1508579681867" expanded="true" signature="62389:62704" ph="..." />
-            <marker date="1508579681867" expanded="true" signature="62467:62684" ph="..." />
-            <marker date="1508579681867" expanded="true" signature="62507:62650" ph="..." />
-            <marker date="1508579681867" expanded="true" signature="62528:62628" ph="..." />
-            <marker date="1508579681867" expanded="true" signature="62771:63078" ph="..." />
-            <marker date="1508579681867" expanded="true" signature="62790:63063" ph="..." />
-            <marker date="1508579681867" expanded="true" signature="62865:63043" ph="..." />
-            <marker date="1508579681867" expanded="true" signature="62905:63009" ph="..." />
-            <marker date="1508579681867" expanded="true" signature="62926:62987" ph="..." />
-          </folding>
+        <state relative-caret-position="450">
+          <caret line="30" column="50" lean-forward="false" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -915,49 +699,6 @@
         <state relative-caret-position="240">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Desktop/AIMA.jar!/aima/search/informed/HillClimbingSearch.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="795">
-          <caret line="63" column="39" lean-forward="false" selection-start-line="63" selection-start-column="39" selection-end-line="63" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Desktop/AIMA.jar!/aima/search/framework/Problem.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="12" column="39" lean-forward="false" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/GoalTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="21" lean-forward="false" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Dada_Camio.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-44">
-          <caret line="37" column="0" lean-forward="true" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/PGoalTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-          <folding>
-            <element signature="e#150#151#0" expanded="true" />
-            <element signature="e#178#179#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -972,20 +713,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/PGoalTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="61" column="32" lean-forward="false" selection-start-line="61" selection-start-column="8" selection-end-line="61" selection-end-column="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="90">
+          <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../Gasolina/Gasolina.jar!/IA/Gasolina/CentrosDistribucion.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../Gasolina/Gasolina.jar!/IA/Gasolina/Distribucion.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/DistributionSuccessorFunction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="78" column="21" lean-forward="true" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
+        <state relative-caret-position="-418">
+          <caret line="42" column="22" lean-forward="false" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -994,32 +749,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Estat.java">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <state relative-caret-position="375">
-          <caret line="25" column="53" lean-forward="true" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
->>>>>>> 20ac219b113d6ba1df0450ca6a56720f17988841
-=======
-        <state relative-caret-position="720">
-          <caret line="48" column="42" lean-forward="false" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="42" />
->>>>>>> f30b14ed0e68277e3447498aee7e1374fbdbbd20
-=======
-        <state relative-caret-position="330">
-          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
->>>>>>> e30e36cec855676751c496e11ba147fc38714457
-=======
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
->>>>>>> cec82e93ff4024a17eb2cc0a50d888ce47ea3826
-=======
-        <state relative-caret-position="705">
-          <caret line="47" column="21" lean-forward="false" selection-start-line="47" selection-start-column="8" selection-end-line="47" selection-end-column="21" />
->>>>>>> f6f9484e92761e3b8a6f928d9873b93e9ad5e7cb
+        <state relative-caret-position="660">
+          <caret line="44" column="18" lean-forward="true" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="20" lean-forward="false" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Dada_Camio.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="199" column="46" lean-forward="true" selection-start-line="199" selection-start-column="46" selection-end-line="199" selection-end-column="46" />
+          <folding />
         </state>
       </provider>
     </entry>
