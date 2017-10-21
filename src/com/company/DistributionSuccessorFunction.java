@@ -74,6 +74,7 @@ public class DistributionSuccessorFunction implements SuccessorFunction {
         for(int p=0; p<Estat.peticions.length; p++){
             for (int c = 0; c < Estat.camions.length; ++c) {
                 for(int v=0; v<5; v++){
+                    System.out.println(board.heuristic());
                     Estat new_state = new Estat(board.getDades_camio(), board.getPeticio_atesa());
                     if(new_state.replace(c,v,p)){
                         retval.add(new Successor(new String("swap C: "), new_state));
