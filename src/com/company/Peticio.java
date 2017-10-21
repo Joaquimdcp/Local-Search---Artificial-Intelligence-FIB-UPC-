@@ -13,7 +13,9 @@ public class Peticio {
     }
 
 
+
     //getters
+    public int getDies() {return dies;}
 
     public int getX() {
         return X;

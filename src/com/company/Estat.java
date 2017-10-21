@@ -23,7 +23,11 @@ public class Estat {
         for (int i = 0; i < dades.length; ++i) {
            dades_camio[i] = new Dada_Camio(dades[i]);
         }
-        this.peticio_atesa = peticio_atesa;
+        this.peticio_atesa = new boolean[peticions.length];
+        for (int i = 0; i < dades.length; ++i) {
+            peticio_atesa = new boolean[peticions.length];
+            peticio_atesa[i] = peticions[i];
+        }
     }
 
     public Dada_Camio[] getDades_camio() {
