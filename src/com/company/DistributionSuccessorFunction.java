@@ -33,7 +33,6 @@ public class DistributionSuccessorFunction implements SuccessorFunction {
                             }
                         }
                     }
-
             }
 
             //per cada viatge de camio

@@ -55,6 +55,12 @@ public class Dada_Camio {
         return viatges[i];
     }
 
+    public int getPeticio(int v, int i) {
+
+        if (i==0) return viatges[v].g1;
+        return viatges[v].g2;
+    }
+
 
 
     //Setters
@@ -114,9 +120,9 @@ public class Dada_Camio {
 
         if(result_km<=640 && result_benefici>0) {
             km = result_km;
-            benefici = result_benefici;
+            benefici += result_benefici;
             viatges[v] = nou_viatge;
-            System.out.println("Entra!!");
+            System.out.println("ESTIC FENT SWAP PETICIONS");
             return true;
         }
         return false;

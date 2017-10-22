@@ -75,10 +75,16 @@ public class Estat {
     }
 
     //Canvia 1 gasolinera atesa del viatge per una altra d'un altre camio
-    public boolean swap_entre_camions(int c, int v, int i, int c2, int v2, int j){
+    public boolean swap_entre_camions(int c, int v, int i, int c2, int v2, int i2){
+        int p1 = dades_camio[c].getPeticio(v, i);
+        int p2 = dades_camio[c2].getPeticio(v2, i2);
 
+        boolean can;
 
-        return false;
+        can = dades_camio[c].swap_peticions(v, i, p2);
+        if (can) can = dades_camio[c2].swap_peticions(v2, i2, p1);
+
+        return can;
     }
 
     public void imprimeix_estat() {
