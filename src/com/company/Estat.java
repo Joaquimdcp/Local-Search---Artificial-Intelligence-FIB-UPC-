@@ -37,20 +37,29 @@ public class Estat {
 
     // Afegeix peticio fantasma
     public boolean replace(int c, int v, int p){
-        Pair viatge = dades_camio[c].get_viatje(v);
-        if(viatge.g2 != -1) peticio_atesa[viatge.g2] = false;
-        if(viatge.g1 != -1) peticio_atesa[viatge.g1] = false;
-        if(p!=-1) peticio_atesa[p] = true;
-        return (dades_camio[c].replace_viatge(p,v));
+        if (peticio_atesa[p]) return false;
+        boolean can = dades_camio[c].replace_viatge(p,v);
+        if(can) {
+            Pair viatge = dades_camio[c].get_viatje(v);
+            if (viatge.g2 != -1) peticio_atesa[viatge.g2] = false;
+            if (viatge.g1 != -1) peticio_atesa[viatge.g1] = false;
+            if (p != -1) peticio_atesa[p] = true;
+            return true;
+        }
+        return false;
     }
 
     public boolean swap_entre_viatges(int c, int v, int i, int p){
         if (peticio_atesa[p]) return false;
         Pair viatge = dades_camio[c].get_viatje(v);
-        if(i==1 && viatge.g2!=-1) peticio_atesa[viatge.g2] = false;
-        else if(viatge.g1!=-1) peticio_atesa[viatge.g1] = false;
-        peticio_atesa[p] = true;
-        return (dades_camio[c].swap_peticions(v,i,p));
+        boolean can = dades_camio[c].swap_peticions(v,i,p);
+        if(can) {
+            if (i == 1 && viatge.g2 != -1) peticio_atesa[viatge.g2] = false;
+            else if (viatge.g1 != -1) peticio_atesa[viatge.g1] = false;
+            peticio_atesa[p] = true;
+            return true;
+        }
+        return false;
     }
 
     public double heuristic(){
