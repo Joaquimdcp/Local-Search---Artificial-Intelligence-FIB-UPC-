@@ -5,6 +5,7 @@ import IA.Gasolina.CentrosDistribucion;
 import IA.Gasolina.Distribucion;
 import IA.Gasolina.Gasolinera;
 import IA.Gasolina.Gasolineras;
+import aima.search.framework.Metrics;
 import aima.search.framework.Problem;
 import aima.search.framework.Search;
 import aima.search.framework.SearchAgent;
@@ -64,13 +65,12 @@ public class Main {
 
         Estat mapa = new Estat(dada_camios,peticions_ates);
 
-        Problem p = new Problem(mapa, new DistributionSuccessorFunction(), new PGoalTest(), new PHeuristicFunction());;
+        Problem p = new Problem(mapa, new DistributionSuccessorFunction(), new PGoalTest(), new PHeuristicFunction());
         Search search = new HillClimbingSearch();
         SearchAgent search_agent = new SearchAgent(p, search);
 
         Estat e = (Estat) search.getGoalState();
-        System.out.println(e.heuristic());
-
-
+        System.out.println(search_agent.getInstrumentation());
+        //Metrics m = search.getMetrics();
     }
 }

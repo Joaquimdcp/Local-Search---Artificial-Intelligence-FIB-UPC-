@@ -70,18 +70,20 @@ public class Dada_Camio {
     public boolean replace_viatge(int id_peticio, int viatge){
         Pair antic_viatge = viatges[viatge];
         int antic_km = calculate_km(antic_viatge);
+        double antic_benefici = calculate_benefici(antic_viatge, antic_km);
         Pair nou_viatge = new Pair();
         nou_viatge.g1 = id_peticio;
         nou_viatge.g2 = -1;
         int now_km = calculate_km(nou_viatge);
         int result_km = km + now_km - antic_km;
         double now_benefici = calculate_benefici(nou_viatge, result_km);
+        double result_benefici = now_benefici- antic_benefici;
 
         if(result_km<=640) {
             km = result_km;
             viatges[viatge].g1 = id_peticio;
             viatges[viatge].g2 = -1;
-            benefici = now_benefici;
+            benefici += result_benefici;
             return true;
         }
         return false;
@@ -218,7 +220,7 @@ public class Dada_Camio {
             double resultat = (float) 1000*percentatge;
             acomultat += resultat;
         }
-        acomultat -= km*2;
+        //acomultat -= km*2;
         return (acomultat);
     }
 

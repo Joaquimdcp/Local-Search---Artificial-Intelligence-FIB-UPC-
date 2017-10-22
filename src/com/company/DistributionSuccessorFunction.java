@@ -7,9 +7,10 @@ import java.util.List;
 
 public class DistributionSuccessorFunction implements SuccessorFunction {
     public List getSuccessors(Object state){
+
         ArrayList retval = new ArrayList();
         Estat board = (Estat) state;
-
+        System.out.println(board.heuristic());
 
 
         /**
@@ -78,18 +79,18 @@ public class DistributionSuccessorFunction implements SuccessorFunction {
                         retval.add(new Successor(new String("swap C: "), new_state));
                     }
                     Estat new_state2 = new Estat(board.dades_camio, board.peticio_atesa);
-                    if(new_state.swap_entre_viatges(c,v,1,p)){
-                        retval.add(new Successor(new String("swap C: "), new_state));
+                    if(new_state2.swap_entre_viatges(c,v,1,p)){
+                        retval.add(new Successor(new String("swap C: "), new_state2));
                     }
                     Estat new_state3 = new Estat(board.dades_camio, board.peticio_atesa);
-                    if(new_state.swap_entre_viatges(c,v,0,p)){
-                        retval.add(new Successor(new String("swap C: "), new_state));
+                    if(new_state3.swap_entre_viatges(c,v,0,p)){
+                        retval.add(new Successor(new String("swap C: "), new_state3));
                     }
                 }
             }
         }
 
-
+        System.out.println(retval.size());
         return retval;
     }
 }
