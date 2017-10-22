@@ -45,6 +45,7 @@ public class Estat {
     }
 
     public boolean swap_entre_viatges(int c, int v, int p, int n){
+        if (peticio_atesa[n]) return false;
         Pair viatge = dades_camio[c].get_viatje(v);
         if(p==1 && viatge.g2!=-1) peticio_atesa[viatge.g2] = false;
         else if(viatge.g1!=-1) peticio_atesa[viatge.g1] = false;
@@ -68,6 +69,17 @@ public class Estat {
             System.out.println("C: " + c + " P: " + p + " : " + afegida);
             return true;
         }
+    }
+
+    public boolean CamioViatgePeticioBuida(int c, int v, int i) {
+        return dades_camio[c].ViatgePeticioBuida(v, i);
+    }
+
+    //Canvia 1 gasolinera atesa del viatge per una altra d'un altre camio
+    public boolean swap_entre_camions(int c, int v, int i, int c2, int v2, int j){
+        //FALTA IMPLEMENTAR:
+
+        return false;
     }
 
 }

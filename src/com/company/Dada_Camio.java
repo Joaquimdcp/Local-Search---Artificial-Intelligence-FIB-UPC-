@@ -294,7 +294,11 @@ public class Dada_Camio {
         km = km - km_prev + km_new;
     }
 
-
+    //retorna true si el viatge v i el forat i del viatge esta buit (== -1)
+    public boolean ViatgePeticioBuida(int v, int i) {
+        if (i == 0) return (viatges[v].g1 == -1);
+        return (viatges[v].g2 == -1);
+    }
 
 
 
