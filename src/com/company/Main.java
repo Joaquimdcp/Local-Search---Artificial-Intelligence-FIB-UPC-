@@ -12,13 +12,16 @@ import aima.search.framework.SearchAgent;
 import aima.search.informed.HillClimbingSearch;
 
 import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Properties;
 
 public class Main {
 
     public static void main(String[] args) throws Exception {
-        int seed = 0; // Seed per a generar num aleatori
+        int seed = 67; // Seed per a generar num aleatori
         int n_gas = 100; //Numero de gasolineres
-        int n_trucks = 10; // Numero de camions
+        int n_trucks = 1; // Numero de camions
         int n_centros = 10;
 
 
@@ -55,8 +58,7 @@ public class Main {
         Distribucion[] camions = new Distribucion[centros_dist.size()];
         int ide = 0;
         for(Distribucion dist: centros_dist){
-            Dada_Camio d = new Dada_Camio(id);
-            dada_camios[ide] = d;
+            dada_camios[ide] = new Dada_Camio(id);;
             camions[ide] = dist;
             ide += 1;
         }
@@ -70,7 +72,31 @@ public class Main {
         SearchAgent search_agent = new SearchAgent(p, search);
 
         Estat e = (Estat) search.getGoalState();
-        System.out.println(search_agent.getInstrumentation());
-        //Metrics m = search.getMetrics();
+        System.out.println(e.heuristic());
+
+        System.out.println();
+        printActions(search_agent.getActions());
+        printInstrumentation(search_agent.getInstrumentation());
+
+
     }
+
+    private static void printInstrumentation(Properties properties) {
+        Iterator keys = properties.keySet().iterator();
+        while (keys.hasNext()) {
+            String key = (String) keys.next();
+            String property = properties.getProperty(key);
+            System.out.println(key + " : " + property);
+        }
+
+    }
+
+    private static void printActions(List actions) {
+        for (int i = 0; i < actions.size(); i++) {
+            String action = (String) actions.get(i);
+            System.out.println(action);
+        }
+    }
+
+
 }
