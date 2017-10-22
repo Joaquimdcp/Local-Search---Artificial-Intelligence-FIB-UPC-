@@ -14,7 +14,7 @@ public class Dada_Camio {
     private int id;
     private double benefici;
     private int km;
-    private Pair[] viatges = new Pair[5];
+    private Pair[] viatges;
 
 
     //Constructors
@@ -22,11 +22,9 @@ public class Dada_Camio {
         this.id = id;
         benefici = 0;
         km = 0;
-        int i = 0;
-        for (Pair v: viatges) {
-            v = new Pair();
-            viatges[i] = v;
-            i++;
+        viatges = new Pair[5];
+        for (int i = 0; i < viatges.length; ++i) {
+            viatges[i] = new Pair();
         }
     }
 
@@ -34,7 +32,8 @@ public class Dada_Camio {
         id = d.id;
         benefici = d.benefici;
         km = d.km;
-        for (int i = 0; i < 5; ++i) {
+        viatges = new Pair[5];
+        for (int i = 0; i < viatges.length; ++i) {
             viatges[i] = new Pair(d.viatges[i]);
         }
     }
@@ -147,6 +146,10 @@ public class Dada_Camio {
     //afegeix peticio amb id = id_peticio al primer viatge amb espai per a peticio
     //retorna true si s'ha pogut afegir i false altrament
     public boolean afegir_peticio(int id_peticio) {
+        for (int i = 0; i < 5; ++i) {
+            System.out.print("g1: " + viatges[i].g1 + "   g2: " + viatges[i].g2);
+            System.out.println();
+        }
         for (Pair v : viatges) {
             int old_km = calculate_km(v);
             double old_ben = calculate_benefici(v, old_km);
