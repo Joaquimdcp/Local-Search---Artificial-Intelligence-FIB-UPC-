@@ -22,8 +22,6 @@ public class DistributionSuccessorFunction implements SuccessorFunction {
                 }
                 //sino mirem on la podem substituir
                 //en totes les posicions dels viatges camio
-
-                else {
                     for (int v = 0; v < 5; ++v) {
                         for (int i = 0; i < 2; ++i) {
                             Estat new_state2 = new Estat(board.getDades_camio(), board.getPeticio_atesa());
@@ -33,7 +31,6 @@ public class DistributionSuccessorFunction implements SuccessorFunction {
                             }
                         }
                     }
-                }
             }
 
             //per cada viatge de camio

@@ -55,6 +55,12 @@ public class Dada_Camio {
         return viatges[i];
     }
 
+    public int getPeticio(int v, int i) {
+
+        if (i==0) return viatges[v].g1;
+        return viatges[v].g2;
+    }
+
 
 
     //Setters
