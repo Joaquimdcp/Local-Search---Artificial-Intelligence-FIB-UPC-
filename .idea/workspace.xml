@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="676c2d33-1426-48ad-a3a2-196e616b6ec6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PractIA.iml" afterPath="$PROJECT_DIR$/PractIA.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/DistributionSuccessorFunction.java" afterPath="$PROJECT_DIR$/src/com/company/DistributionSuccessorFunction.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/Estat.java" afterPath="$PROJECT_DIR$/src/com/company/Estat.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/Main.java" afterPath="$PROJECT_DIR$/src/com/company/Main.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,7 +20,7 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-402">
+            <state relative-caret-position="-180">
               <caret line="21" column="23" lean-forward="false" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -30,12 +29,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Dada_Camio.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Dada_Camio.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Dada_Camio.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4017">
-              <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-              <folding />
+            <state relative-caret-position="270">
+              <caret line="109" column="48" lean-forward="false" selection-start-line="109" selection-start-column="30" selection-end-line="109" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -53,23 +54,67 @@
       <file leaf-file-name="Estat.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Estat.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-342">
-              <caret line="27" column="6" lean-forward="false" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
+            <state relative-caret-position="157">
+              <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DistributionSuccessorFunction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/DistributionSuccessorFunction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="427">
+              <caret line="56" column="59" lean-forward="false" selection-start-line="56" selection-start-column="59" selection-end-line="56" selection-end-column="59" />
               <folding>
-                <element signature="e#2645#2646#0" expanded="true" />
-                <element signature="e#2673#2674#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DistributionSuccessorFunction.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/company/DistributionSuccessorFunction.java">
+      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="37" column="21" lean-forward="true" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <marker date="1508693484740" expanded="true" signature="44041:44058" ph="..." />
+                <marker date="1508693484740" expanded="true" signature="44041:44076" ph="..." />
+                <marker date="1508693484740" expanded="true" signature="44041:44089" ph="..." />
+                <marker date="1508693484740" expanded="true" signature="44041:44104" ph="..." />
+                <marker date="1508693484740" expanded="true" signature="44139:46331" ph="..." />
+                <marker date="1508693484740" expanded="true" signature="44152:46316" ph="..." />
+                <marker date="1508693484740" expanded="true" signature="44206:44501" ph="..." />
+                <marker date="1508693484740" expanded="true" signature="44225:44486" ph="..." />
+                <marker date="1508693484740" expanded="true" signature="44288:44466" ph="..." />
+                <marker date="1508693484740" expanded="true" signature="44328:44432" ph="..." />
+                <marker date="1508693484740" expanded="true" signature="44349:44410" ph="..." />
+                <marker date="1508693484740" expanded="true" signature="44551:44878" ph="..." />
+                <marker date="1508693484740" expanded="true" signature="44570:44863" ph="..." />
+                <marker date="1508693484740" expanded="true" signature="44665:44843" ph="..." />
+                <marker date="1508693484740" expanded="true" signature="44705:44809" ph="..." />
+                <marker date="1508693484740" expanded="true" signature="44726:44787" ph="..." />
+                <marker date="1508693484740" expanded="true" signature="44929:45194" ph="..." />
+                <marker date="1508693484740" expanded="true" signature="44948:45179" ph="..." />
+                <marker date="1508693484740" expanded="true" signature="44981:45159" ph="..." />
+                <marker date="1508693484740" expanded="true" signature="45021:45125" ph="..." />
+                <marker date="1508693484740" expanded="true" signature="45042:45103" ph="..." />
+                <marker date="1508693484740" expanded="true" signature="45237:45543" ph="..." />
+                <marker date="1508693484740" expanded="true" signature="45256:45528" ph="..." />
+                <marker date="1508693484740" expanded="true" signature="45330:45508" ph="..." />
+                <marker date="1508693484740" expanded="true" signature="45370:45474" ph="..." />
+                <marker date="1508693484740" expanded="true" signature="45391:45452" ph="..." />
+                <marker date="1508693484740" expanded="true" signature="45594:45943" ph="..." />
+                <marker date="1508693484740" expanded="true" signature="45613:45928" ph="..." />
+                <marker date="1508693484740" expanded="true" signature="45691:45908" ph="..." />
+                <marker date="1508693484740" expanded="true" signature="45731:45874" ph="..." />
+                <marker date="1508693484740" expanded="true" signature="45752:45852" ph="..." />
+                <marker date="1508693484740" expanded="true" signature="45995:46302" ph="..." />
+                <marker date="1508693484740" expanded="true" signature="46014:46287" ph="..." />
+                <marker date="1508693484740" expanded="true" signature="46089:46267" ph="..." />
+                <marker date="1508693484740" expanded="true" signature="46129:46233" ph="..." />
+                <marker date="1508693484740" expanded="true" signature="46150:46211" ph="..." />
               </folding>
             </state>
           </provider>
@@ -115,17 +160,17 @@
         <option value="$PROJECT_DIR$/src/com/company/Dada_Camio.java" />
         <option value="$PROJECT_DIR$/src/com/company/PHeuristicFunction.java" />
         <option value="$PROJECT_DIR$/src/com/company/PHeuristicFunction.java" />
+        <option value="$PROJECT_DIR$/src/com/company/Main.java" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/src/com/company/DistributionSuccessorFunction.java" />
         <option value="$PROJECT_DIR$/src/com/company/Estat.java" />
-        <option value="$PROJECT_DIR$/src/com/company/Main.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="993" />
-    <option name="y" value="310" />
-    <option name="width" value="1922" />
-    <option name="height" value="1055" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="51" />
+    <option name="width" value="1914" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -143,6 +188,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
@@ -155,11 +202,6 @@
             <path>
               <item name="IA-practica-1" type="b2602c69:ProjectViewProjectNode" />
               <item name="IA-practica-1" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="IA-practica-1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="IA-practica-1" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -168,17 +210,19 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="company" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="IA-practica-1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Casi VA" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/AIMA.jar!/" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
@@ -427,7 +471,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="993" y="310" width="1922" height="1055" extended-state="7" />
+    <frame x="-1" y="25" width="1922" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -437,13 +482,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15591398" sideWeight="0.5064034" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35913977" sideWeight="0.49359658" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35669455" sideWeight="0.49359658" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32845187" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29082176" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.290625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -457,6 +501,7 @@
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -495,10 +540,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="e#2645#2646#0" expanded="true" />
-            <element signature="e#2673#2674#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -545,13 +587,6 @@
     <entry file="jar://$USER_HOME$/Gasolina/Gasolina.jar!/IA/Gasolina/Gasolinera.class" />
     <entry file="jar://$USER_HOME$/Gasolina/Gasolina.jar!/IA/Gasolina/Test.class" />
     <entry file="jar://$USER_HOME$/Gasolina/Gasolina.jar!/IA/Gasolina/CentrosDistribucion.class" />
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/out/production/PractIA/com/company/Main.class" />
     <entry file="file://$PROJECT_DIR$/src/com/company/PHeuristicFunction.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -570,28 +605,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../AIMA.jar!/aima/search/informed/HillClimbingSearch.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="530">
-          <caret line="63" column="39" lean-forward="false" selection-start-line="63" selection-start-column="39" selection-end-line="63" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../AIMA.jar!/aima/search/informed/HillClimbingSearch.class" />
     <entry file="file://$PROJECT_DIR$/src/com/company/PGoalTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../../AIMA.jar!/aima/search/framework/SearchAgent.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../AIMA.jar!/aima/search/framework/SearchAgent.class" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -615,28 +637,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Dada_Camio.java">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4017">
-          <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Estat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-342">
-          <caret line="27" column="6" lean-forward="false" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#2645#2646#0" expanded="true" />
-            <element signature="e#2673#2674#0" expanded="true" />
+            <marker date="1508693484740" expanded="true" signature="44041:44058" ph="..." />
+            <marker date="1508693484740" expanded="true" signature="44041:44076" ph="..." />
+            <marker date="1508693484740" expanded="true" signature="44041:44089" ph="..." />
+            <marker date="1508693484740" expanded="true" signature="44041:44104" ph="..." />
+            <marker date="1508693484740" expanded="true" signature="44139:46331" ph="..." />
+            <marker date="1508693484740" expanded="true" signature="44152:46316" ph="..." />
+            <marker date="1508693484740" expanded="true" signature="44206:44501" ph="..." />
+            <marker date="1508693484740" expanded="true" signature="44225:44486" ph="..." />
+            <marker date="1508693484740" expanded="true" signature="44288:44466" ph="..." />
+            <marker date="1508693484740" expanded="true" signature="44328:44432" ph="..." />
+            <marker date="1508693484740" expanded="true" signature="44349:44410" ph="..." />
+            <marker date="1508693484740" expanded="true" signature="44551:44878" ph="..." />
+            <marker date="1508693484740" expanded="true" signature="44570:44863" ph="..." />
+            <marker date="1508693484740" expanded="true" signature="44665:44843" ph="..." />
+            <marker date="1508693484740" expanded="true" signature="44705:44809" ph="..." />
+            <marker date="1508693484740" expanded="true" signature="44726:44787" ph="..." />
+            <marker date="1508693484740" expanded="true" signature="44929:45194" ph="..." />
+            <marker date="1508693484740" expanded="true" signature="44948:45179" ph="..." />
+            <marker date="1508693484740" expanded="true" signature="44981:45159" ph="..." />
+            <marker date="1508693484740" expanded="true" signature="45021:45125" ph="..." />
+            <marker date="1508693484740" expanded="true" signature="45042:45103" ph="..." />
+            <marker date="1508693484740" expanded="true" signature="45237:45543" ph="..." />
+            <marker date="1508693484740" expanded="true" signature="45256:45528" ph="..." />
+            <marker date="1508693484740" expanded="true" signature="45330:45508" ph="..." />
+            <marker date="1508693484740" expanded="true" signature="45370:45474" ph="..." />
+            <marker date="1508693484740" expanded="true" signature="45391:45452" ph="..." />
+            <marker date="1508693484740" expanded="true" signature="45594:45943" ph="..." />
+            <marker date="1508693484740" expanded="true" signature="45613:45928" ph="..." />
+            <marker date="1508693484740" expanded="true" signature="45691:45908" ph="..." />
+            <marker date="1508693484740" expanded="true" signature="45731:45874" ph="..." />
+            <marker date="1508693484740" expanded="true" signature="45752:45852" ph="..." />
+            <marker date="1508693484740" expanded="true" signature="45995:46302" ph="..." />
+            <marker date="1508693484740" expanded="true" signature="46014:46287" ph="..." />
+            <marker date="1508693484740" expanded="true" signature="46089:46267" ph="..." />
+            <marker date="1508693484740" expanded="true" signature="46129:46233" ph="..." />
+            <marker date="1508693484740" expanded="true" signature="46150:46211" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-402">
+        <state relative-caret-position="-180">
           <caret line="21" column="23" lean-forward="false" selection-start-line="21" selection-start-column="23" selection-end-line="21" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -646,8 +694,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/DistributionSuccessorFunction.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="37" column="21" lean-forward="true" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
+        <state relative-caret-position="427">
+          <caret line="56" column="59" lean-forward="false" selection-start-line="56" selection-start-column="59" selection-end-line="56" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Estat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="78" column="0" lean-forward="false" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/Dada_Camio.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="109" column="48" lean-forward="false" selection-start-line="109" selection-start-column="30" selection-end-line="109" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -711,6 +777,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

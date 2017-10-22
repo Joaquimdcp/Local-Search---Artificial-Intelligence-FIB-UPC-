@@ -47,7 +47,7 @@ public class Estat {
     public boolean swap_entre_viatges(int c, int v, int i, int p){
         if (peticio_atesa[p]) return false;
         Pair viatge = dades_camio[c].get_viatje(v);
-        if(p==1 && viatge.g2!=-1) peticio_atesa[viatge.g2] = false;
+        if(i==1 && viatge.g2!=-1) peticio_atesa[viatge.g2] = false;
         else if(viatge.g1!=-1) peticio_atesa[viatge.g1] = false;
         peticio_atesa[p] = true;
         return (dades_camio[c].swap_peticions(v,i,p));
@@ -76,7 +76,7 @@ public class Estat {
 
     //Canvia 1 gasolinera atesa del viatge per una altra d'un altre camio
     public boolean swap_entre_camions(int c, int v, int i, int c2, int v2, int j){
-        //FALTA IMPLEMENTAR:
+
 
         return false;
     }
