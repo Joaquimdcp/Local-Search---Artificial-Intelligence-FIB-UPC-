@@ -23,6 +23,7 @@ public class DistributionSuccessorFunction implements SuccessorFunction {
                 //sino mirem on la podem substituir
                 //en totes les posicions dels viatges camio
 
+                else {
 
                     for (int v = 0; v < 5; ++v) {
                         for (int i = 0; i < 2; ++i) {
@@ -33,6 +34,7 @@ public class DistributionSuccessorFunction implements SuccessorFunction {
                             }
                         }
                     }
+                }
             }
 
             //per cada viatge de camio

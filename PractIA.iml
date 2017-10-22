@@ -23,7 +23,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/AIMA.jar!/" />
+          <root url="jar://$MODULE_DIR$/../dist/AIMA.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
@@ -32,13 +32,11 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$USER_HOME$/Gasolina/Gasolina.jar!/" />
+          <root url="jar://$MODULE_DIR$/../Gasolina/Gasolina.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="Gasolina" level="project" />
-    <orderEntry type="library" name="AIMA" level="project" />
   </component>
 </module>

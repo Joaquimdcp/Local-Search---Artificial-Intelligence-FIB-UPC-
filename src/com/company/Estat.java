@@ -37,6 +37,7 @@ public class Estat {
 
     // Afegeix peticio fantasma
     public boolean replace(int c, int v, int p){
+        if (peticio_atesa[p]) return false;
         Pair viatge = dades_camio[c].get_viatje(v);
         if(viatge.g2 != -1) peticio_atesa[viatge.g2] = false;
         if(viatge.g1 != -1) peticio_atesa[viatge.g1] = false;

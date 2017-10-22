@@ -105,12 +105,12 @@ public class Dada_Camio {
 
         Pair nou_viatge = new Pair();
         if(pos==0) {
-            nou_viatge.g1 = antic_viatge.g1;
-            nou_viatge.g2 = peticio;
+            nou_viatge.g2 = antic_viatge.g2;
+            nou_viatge.g1 = peticio;
         }
         else{
-            nou_viatge.g1 = peticio;
-            nou_viatge.g2 = antic_viatge.g2;
+            nou_viatge.g2 = peticio;
+            nou_viatge.g1 = antic_viatge.g1;
         }
         int nou_km = calculate_km(nou_viatge);
         double now_benefici = calculate_benefici(nou_viatge, nou_km);
@@ -122,7 +122,7 @@ public class Dada_Camio {
             km = result_km;
             benefici += result_benefici;
             viatges[v] = nou_viatge;
-            System.out.println("ESTIC FENT SWAP PETICIONS");
+            //System.out.println("ESTIC FENT SWAP PETICIONS");
             return true;
         }
         return false;
