@@ -25,7 +25,7 @@ public class Estat {
         }
         this.peticio_atesa = new boolean[peticions.length];
         for (int i = 0; i < peticions.length; ++i) {
-            peticio_atesa[i] = new Boolean(peticions[i]);
+            peticio_atesa[i] = peticions[i];
         }
     }
 
@@ -44,13 +44,13 @@ public class Estat {
         return (dades_camio[c].replace_viatge(p,v));
     }
 
-    public boolean swap_entre_viatges(int c, int v, int p, int n){
-        if (peticio_atesa[n]) return false;
+    public boolean swap_entre_viatges(int c, int v, int i, int p){
+        if (peticio_atesa[p]) return false;
         Pair viatge = dades_camio[c].get_viatje(v);
         if(p==1 && viatge.g2!=-1) peticio_atesa[viatge.g2] = false;
         else if(viatge.g1!=-1) peticio_atesa[viatge.g1] = false;
-        peticio_atesa[n] = true;
-        return (dades_camio[c].swap_peticions(v,p,n));
+        peticio_atesa[p] = true;
+        return (dades_camio[c].swap_peticions(v,i,p));
     }
 
     public double heuristic(){
@@ -66,8 +66,7 @@ public class Estat {
         else {
             boolean afegida = dades_camio[c].afegir_peticio(p);
             peticio_atesa[p] = true;
-            System.out.println("C: " + c + " P: " + p + " : " + afegida);
-            return true;
+            return afegida;
         }
     }
 
@@ -77,7 +76,29 @@ public class Estat {
 
     //Canvia 1 gasolinera atesa del viatge per una altra d'un altre camio
     public boolean swap_entre_camions(int c, int v, int i, int c2, int v2, int j){
+        //FALTA IMPLEMENTAR:
+
         return false;
+    }
+
+    public void imprimeix_estat() {
+        System.out.print("Peticions_ateses: ");
+        for (int k = 0; k < peticio_atesa.length; ++k) {
+            System.out.print((k%10));
+        }
+        System.out.println();
+        System.out.print("Peticions_ateses: ");
+        for (int k = 0; k < peticio_atesa.length; ++k) {
+            if (peticio_atesa[k]) System.out.print(1);
+            else System.out.print(0);
+        }
+        System.out.println();
+        for (int c = 0; c < dades_camio.length; ++c) {
+            System.out.println("CAMIO:::  " + c);
+            dades_camio[c].imprimeix_camio();
+            System.out.println();
+        }
+
     }
 
 }

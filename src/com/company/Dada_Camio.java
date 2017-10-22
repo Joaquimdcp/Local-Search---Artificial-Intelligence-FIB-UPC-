@@ -72,20 +72,18 @@ public class Dada_Camio {
     public boolean replace_viatge(int id_peticio, int viatge){
         Pair antic_viatge = viatges[viatge];
         int antic_km = calculate_km(antic_viatge);
-        double antic_benefici = calculate_benefici(antic_viatge, antic_km);
         Pair nou_viatge = new Pair();
         nou_viatge.g1 = id_peticio;
         nou_viatge.g2 = -1;
         int now_km = calculate_km(nou_viatge);
         int result_km = km + now_km - antic_km;
         double now_benefici = calculate_benefici(nou_viatge, result_km);
-        double result_benefici = now_benefici- antic_benefici;
 
         if(result_km<=640) {
             km = result_km;
             viatges[viatge].g1 = id_peticio;
             viatges[viatge].g2 = -1;
-            benefici += result_benefici;
+            benefici = now_benefici;
             return true;
         }
         return false;
@@ -95,9 +93,9 @@ public class Dada_Camio {
 
 
     public boolean swap_peticions(int v, int pos, int peticio){
-        Pair antic_viatge = viatges[v];
+        Pair antic_viatge = new Pair(viatges[v]);
         int antic_km = calculate_km(antic_viatge);
-        double antic_benefici = benefici;
+        double antic_benefici_viatge = calculate_benefici(antic_viatge, antic_km);
 
         Pair nou_viatge = new Pair();
         if(pos==0) {
@@ -112,13 +110,13 @@ public class Dada_Camio {
         double now_benefici = calculate_benefici(nou_viatge, nou_km);
 
         int result_km = km + nou_km - antic_km;
-        double result_benefici = now_benefici-antic_benefici;
-
+        double result_benefici = now_benefici-antic_benefici_viatge;
 
         if(result_km<=640 && result_benefici>0) {
             km = result_km;
-            benefici += result_benefici;
+            benefici = result_benefici;
             viatges[v] = nou_viatge;
+            System.out.println("Entra!!");
             return true;
         }
         return false;
@@ -148,10 +146,6 @@ public class Dada_Camio {
     //afegeix peticio amb id = id_peticio al primer viatge amb espai per a peticio
     //retorna true si s'ha pogut afegir i false altrament
     public boolean afegir_peticio(int id_peticio) {
-        for (int i = 0; i < 5; ++i) {
-            System.out.print("g1: " + viatges[i].g1 + "   g2: " + viatges[i].g2);
-            System.out.println();
-        }
         for (Pair v : viatges) {
             int old_km = calculate_km(v);
             double old_ben = calculate_benefici(v, old_km);
@@ -224,26 +218,21 @@ public class Dada_Camio {
     }
 
     private double calculate_benefici(Pair viatge, int km){
-        int peticions_ateses = 0;
-        double acomultat = 0.0;
+        int ingres = 0;
         if(viatge.g1!=-1) {
-            int peticio_dies = Estat.peticions[viatge.g1].dies;
-            int penalitza = 100 - (int) Math.pow(2, peticio_dies);
-            double percentatge = (double)penalitza/100.00;
-            double resultat = (double) 1000*percentatge;
-            ;
-            acomultat += resultat;
-
+            if ( Estat.peticions[viatge.g1].dies == 0) ingres += 1020;
+            else if ( Estat.peticions[viatge.g1].dies == 1) ingres += 980;
+            else if ( Estat.peticions[viatge.g1].dies == 2) ingres += 960;
+            else if ( Estat.peticions[viatge.g1].dies == 3) ingres += 920;
         }
         if(viatge.g2!=-1){
-            int peticio_dies = Estat.peticions[viatge.g2].dies;
-            int penalitza = 100 - (int) Math.pow(2, peticio_dies);
-            double percentatge = (double)penalitza/100.00;
-            double resultat = (double) 1000*percentatge;
-            acomultat += resultat;
+            if ( Estat.peticions[viatge.g2].dies == 0) ingres += 1020;
+            else if ( Estat.peticions[viatge.g2].dies == 1) ingres += 980;
+            else if ( Estat.peticions[viatge.g2].dies == 2) ingres += 960;
+            else if ( Estat.peticions[viatge.g2].dies == 3) ingres += 920;
         }
-        //acomultat -= km*2;
-        return (acomultat);
+        ingres -= km*2;
+        return (ingres);
     }
 
 
@@ -300,6 +289,15 @@ public class Dada_Camio {
     public boolean ViatgePeticioBuida(int v, int i) {
         if (i == 0) return (viatges[v].g1 == -1);
         return (viatges[v].g2 == -1);
+    }
+
+    public void imprimeix_camio() {
+        for (int i = 0; i < 5; ++i) {
+            System.out.print("g1: " + viatges[i].g1 + "   g2: " + viatges[i].g2);
+            System.out.println();
+        }
+        System.out.println("KM::       " + km);
+        System.out.println("Benefici:  " + benefici);
     }
 
 

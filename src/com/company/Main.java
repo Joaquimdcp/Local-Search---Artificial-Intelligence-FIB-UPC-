@@ -5,7 +5,6 @@ import IA.Gasolina.CentrosDistribucion;
 import IA.Gasolina.Distribucion;
 import IA.Gasolina.Gasolinera;
 import IA.Gasolina.Gasolineras;
-import aima.search.framework.Metrics;
 import aima.search.framework.Problem;
 import aima.search.framework.Search;
 import aima.search.framework.SearchAgent;
@@ -19,7 +18,7 @@ import java.util.Properties;
 public class Main {
 
     public static void main(String[] args) throws Exception {
-        int seed = 67; // Seed per a generar num aleatori
+        int seed = 1234; // Seed per a generar num aleatori
         int n_gas = 100; //Numero de gasolineres
         int n_trucks = 1; // Numero de camions
         int n_centros = 10;
@@ -58,6 +57,7 @@ public class Main {
         Distribucion[] camions = new Distribucion[centros_dist.size()];
         int ide = 0;
         for(Distribucion dist: centros_dist){
+            System.out.println("Camio: " + ide + " X:" + dist.getCoordX() + " Y:" + dist.getCoordY());
             dada_camios[ide] = new Dada_Camio(id);;
             camions[ide] = dist;
             ide += 1;
@@ -67,16 +67,20 @@ public class Main {
 
         Estat mapa = new Estat(dada_camios,peticions_ates);
 
-        Problem p = new Problem(mapa, new DistributionSuccessorFunction(), new PGoalTest(), new PHeuristicFunction());
+        Problem p = new Problem(mapa, new DistributionSuccessorFunction(), new PGoalTest(), new PHeuristicFunction());;
         Search search = new HillClimbingSearch();
         SearchAgent search_agent = new SearchAgent(p, search);
 
         Estat e = (Estat) search.getGoalState();
-        System.out.println(e.heuristic());
+
+        e.imprimeix_estat();
 
         System.out.println();
         printActions(search_agent.getActions());
         printInstrumentation(search_agent.getInstrumentation());
+
+
+        System.out.println(e.heuristic());
 
 
     }

@@ -20,25 +20,23 @@
         <jarDirectory url="file://$USER_HOME$/Gasolina" recursive="false" />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar:///home/AIMA.jar!/" />
+          <root url="jar://$MODULE_DIR$/../AIMA.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="module-library">
+    <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar:///home/Gasolina/Gasolina.jar!/" />
+          <root url="jar://$MODULE_DIR$/../Gasolina/Gasolina.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="Gasolina" level="project" />
-    <orderEntry type="library" name="AIMA" level="project" />
   </component>
 </module>
