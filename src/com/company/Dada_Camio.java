@@ -153,21 +153,30 @@ public class Dada_Camio {
         for (Pair v : viatges) {
             int old_km = calculate_km(v);
             double old_ben = calculate_benefici(v, old_km);
+            int km_tot = 0;
             if (v.g1 == -1) {
                 v.g1 = id_peticio;
                 int new_km = calculate_km(v);
                 double new_ben = calculate_benefici(v, new_km);
-                km = km + new_km - old_km;
-                benefici = benefici + new_ben - old_ben;
-                return true;
+                km_tot = km + new_km - old_km;
+                if (km_tot <= 640) {
+                    km = km_tot;
+                    benefici = benefici + new_ben - old_ben;
+                    return true;
+                }
+                else return false;
             }
             else if (v.g2 == -1) {
                 v.g2 = id_peticio;
                 int new_km = calculate_km(v);
                 double new_ben = calculate_benefici(v, new_km);
-                km = km + new_km - old_km;
-                benefici = benefici + new_ben - old_ben;
-                return true;
+                km_tot = km + new_km - old_km;
+                if (km_tot <= 640) {
+                    km = km_tot;
+                    benefici = benefici + new_ben - old_ben;
+                    return true;
+                }
+                else return false;
             }
         }
         return false;
