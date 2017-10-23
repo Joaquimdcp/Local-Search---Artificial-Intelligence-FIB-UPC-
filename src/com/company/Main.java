@@ -18,7 +18,7 @@ import java.util.Properties;
 public class Main {
 
     public static void main(String[] args) throws Exception {
-        int seed = 1234; // Seed per a generar num aleatori
+        int seed = 0; // Seed per a generar num aleatori
         int n_gas = 100; //Numero de gasolineres
         int n_trucks = 1; // Numero de camions
         int n_centros = 10;
@@ -81,6 +81,9 @@ public class Main {
 
 
         System.out.println(e.heuristic());
+
+        if (e.HiHaRepetits()) System.out.println("Es repeteixen peticions    :(");
+        else System.out.println("NO HI HA REPETITS!!!   :D");
 
 
     }

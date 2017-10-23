@@ -108,4 +108,19 @@ public class Estat {
 
     }
 
+    public boolean HiHaRepetits() {
+        boolean[] check_peticions = new boolean[peticio_atesa.length];
+        for (int c = 0; c < dades_camio.length; ++c) {
+            for (int v = 0; v < 5; ++v) {
+                for (int i = 0; i < 2; ++i) {
+                    if (dades_camio[c].getPeticio(v, i) != -1) {
+                        if (check_peticions[dades_camio[c].getPeticio(v, i)]) return true;
+                        check_peticions[dades_camio[c].getPeticio(v, i)] = true;
+                    }
+                }
+            }
+        }
+        return false;
+    }
+
 }
