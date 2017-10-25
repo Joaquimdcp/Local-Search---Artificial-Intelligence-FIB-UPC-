@@ -47,9 +47,8 @@ public class Estat {
 
     public boolean swap_entre_viatges(int c, int v, int i, int p){
         if (peticio_atesa[p]) return false;
-        Pair viatge = dades_camio[c].get_viatje(v);
-        if(i==1 && viatge.g2!=-1) peticio_atesa[viatge.g2] = false;
-        else if(viatge.g1!=-1) peticio_atesa[viatge.g1] = false;
+        int p_antiga = dades_camio[c].getPeticio(v, i);
+        if (p_antiga != -1) peticio_atesa[p_antiga] = false;
         peticio_atesa[p] = true;
         return (dades_camio[c].swap_peticions(v,i,p));
     }
