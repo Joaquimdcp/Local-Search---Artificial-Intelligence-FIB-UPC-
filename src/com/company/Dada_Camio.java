@@ -118,7 +118,7 @@ public class Dada_Camio {
         int result_km = km + nou_km - antic_km;
         double result_benefici = now_benefici-antic_benefici_viatge;
 
-        if(result_km<=640 && result_benefici>0) {
+        if(result_km<=640) {
             km = result_km;
             benefici += result_benefici;
             viatges[v] = nou_viatge;
