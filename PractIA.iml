@@ -32,7 +32,7 @@
     <orderEntry type="module-library" exported="">
       <library>
         <CLASSES>
-          <root url="jar://$MODULE_DIR$/../AIMA.jar!/" />
+          <root url="jar://$MODULE_DIR$/../dist/AIMA.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
