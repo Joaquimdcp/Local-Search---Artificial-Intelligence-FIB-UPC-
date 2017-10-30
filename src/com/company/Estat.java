@@ -35,22 +35,13 @@ public class Estat {
 
     public boolean[] getPeticio_atesa() {return peticio_atesa;}
 
-    // Afegeix peticio fantasma
-    public boolean replace(int c, int v, int p){
-        if (peticio_atesa[p]) return false;
-        Pair viatge = dades_camio[c].get_viatje(v);
-        if(viatge.g2 != -1) peticio_atesa[viatge.g2] = false;
-        if(viatge.g1 != -1) peticio_atesa[viatge.g1] = false;
-        if(p!=-1) peticio_atesa[p] = true;
-        return (dades_camio[c].replace_viatge(p,v));
-    }
-
     public boolean swap_entre_viatges(int c, int v, int i, int p){
-        if (peticio_atesa[p]) return false;
-        int p_antiga = dades_camio[c].getPeticio(v, i);
-        if (p_antiga != -1) peticio_atesa[p_antiga] = false;
-        peticio_atesa[p] = true;
-        return (dades_camio[c].swap_peticions(v,i,p));
+            if (peticio_atesa[p]) return false;
+            int p_antiga = dades_camio[c].getPeticio(v, i);
+            if (p_antiga != -1) peticio_atesa[p_antiga] = false;
+            peticio_atesa[p] = true;
+            return (dades_camio[c].swap_peticions(v, i, p));
+
     }
 
     public double heuristic(){
@@ -62,12 +53,13 @@ public class Estat {
     }
 
     public boolean check_and_add(int c, int p) {
-        if (peticio_atesa[p]) return false;
-        else {
-            boolean afegida = dades_camio[c].afegir_peticio(p);
-            peticio_atesa[p] = true;
-            return afegida;
-        }
+            if (peticio_atesa[p]) return false;
+            else {
+                boolean afegida = dades_camio[c].afegir_peticio(p);
+                peticio_atesa[p] = true;
+                return afegida;
+            }
+
     }
 
     public boolean CamioViatgePeticioBuida(int c, int v, int i) {
@@ -76,15 +68,15 @@ public class Estat {
 
     //Canvia 1 gasolinera atesa del viatge per una altra d'un altre camio
     public boolean swap_entre_camions(int c, int v, int i, int c2, int v2, int i2){
-        int p1 = dades_camio[c].getPeticio(v, i);
-        int p2 = dades_camio[c2].getPeticio(v2, i2);
+            int p1 = dades_camio[c].getPeticio(v, i);
+            int p2 = dades_camio[c2].getPeticio(v2, i2);
 
-        boolean can;
+            boolean can;
 
-        can = dades_camio[c].swap_peticions(v, i, p2);
-        if (can) can = dades_camio[c2].swap_peticions(v2, i2, p1);
+            can = dades_camio[c].swap_peticions(v, i, p2);
+            if (can) can = dades_camio[c2].swap_peticions(v2, i2, p1);
 
-        return can;
+            return can;
     }
 
     public void imprimeix_estat() {

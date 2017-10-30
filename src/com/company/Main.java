@@ -18,6 +18,7 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) throws Exception{
+        Random r = new Random();
         Scanner sc = new Scanner(System.in);
         System.out.println("Escriu H per a Hill Climbing o S per a Simulated Annealing: ");
         String tipus = sc.nextLine();
@@ -37,8 +38,11 @@ public class Main {
             double mitjana = 0;
             if (it == 1) executarHillClimbing(seed, n_gas, n_trucks, n_centros, solu_ini, true);
             else {
+
+                int assed;
                 for (int i = 0; i < it; ++i) {
-                    mitjana += executarHillClimbing(i + seed, n_gas, n_trucks, n_centros,solu_ini, false);
+                    assed  = r.nextInt(1000000);
+                    mitjana += executarHillClimbing(assed, n_gas, n_trucks, n_centros,solu_ini, false);
                 }
                 mitjana /= it;
                 System.out.println("Mitjana execucio::: " + mitjana);
@@ -68,9 +72,11 @@ public class Main {
             double mitjana = 0;
             if (iteracions == 1) executarSA(seed, n_gas, n_trucks, n_centros, n_it, it_temp, k, l, solu_ini, true);
             else {
+                int assed;
                 for (int i = 0; i < iteracions; ++i) {
+                    assed = r.nextInt(1000000);
                     //executarSA(i + seed, n_gas, n_trucks, n_centros, n_it, it_temp, k, l, false);
-                    mitjana += executarSA(i + seed, n_gas, n_trucks, n_centros, n_it, it_temp, k, l, solu_ini, false);
+                    mitjana += executarSA(assed, n_gas, n_trucks, n_centros, n_it, it_temp, k, l, solu_ini, false);
                 }
                 mitjana /= iteracions
                 ;

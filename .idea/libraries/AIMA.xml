@@ -1,7 +1,7 @@
 <component name="libraryTable">
   <library name="AIMA">
     <CLASSES>
-      <root url="jar://$USER_HOME$/Desktop/AIMA.jar!/" />
+      <root url="jar://$USER_HOME$/Escriptori/dist/AIMA.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
