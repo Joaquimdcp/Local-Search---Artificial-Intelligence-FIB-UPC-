@@ -47,7 +47,7 @@ public class Main {
             int n_it = sc.nextInt();
             int it_temp = sc.nextInt();
             int k = sc.nextInt();
-            int l = sc.nextInt();
+            double l = sc.nextDouble();
             if (iteracions == 1) executarSA(seed, n_gas, n_trucks, n_centros, n_it, it_temp, k, l, true);
             else {
                 for (int i = 0; i < iteracions; ++i) {
@@ -173,7 +173,7 @@ public class Main {
 
         Estat mapa = new Estat(dada_camios,peticions_ates);
 
-        Problem p = new Problem(mapa, new DistributionSuccessorFunction(), new PGoalTest(), new PHeuristicFunction());;
+        Problem p = new Problem(mapa, new DistributionSuccessorSA(), new PGoalTest(), new PHeuristicFunction());;
         Search search = new SimulatedAnnealingSearch(n_it, it_temp, k, l);
         SearchAgent search_agent = new SearchAgent(p, search);
 
@@ -182,7 +182,7 @@ public class Main {
         if (debug) {
             e.imprimeix_estat();
             System.out.println();
-            printActions(search_agent.getActions());
+            //printActions(search_agent.getActions());
             printInstrumentation(search_agent.getInstrumentation());
             if (e.HiHaRepetits()) System.out.println("Es repeteixen peticions    :(");
             else System.out.println("NO HI HA REPETITS!!!   :D");
