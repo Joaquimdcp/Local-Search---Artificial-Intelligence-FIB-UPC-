@@ -51,7 +51,7 @@ public class Main {
             if (iteracions == 1) executarSA(seed, n_gas, n_trucks, n_centros, n_it, it_temp, k, l, true);
             else {
                 for (int i = 0; i < iteracions; ++i) {
-                    executarSA(i + seed, n_gas, n_trucks, n_centros, n_it, it_temp, k, l, true);
+                    executarSA(i + seed, n_gas, n_trucks, n_centros, n_it, it_temp, k, l, false);
                 }
             }
         }
