@@ -24,42 +24,64 @@ public class Main {
         if (tipus.equals("H") || tipus.equals("h")) {
             System.out.println("Quantes iteracions?");
             int it = sc.nextInt();
-            System.out.println("Indica seed, n_gas, n_trucks, n_centros: ");
+            System.out.println("Indica seed");
             int seed = sc.nextInt();
+            System.out.println("Indica n_gas");
             int n_gas = sc.nextInt();
+            System.out.println("Indica n_trucks");
             int n_trucks = sc.nextInt();
+            System.out.println("Indica n_centros");
             int n_centros = sc.nextInt();
-            if (it == 1) executarHillClimbing(seed, n_gas, n_trucks, n_centros, true);
+            System.out.println("Indica solu_ini(0->buit, 1->swaps a viatge.g1, 2->swaps a tot, 3->add a tot)");
+            int solu_ini = sc.nextInt();
+            double mitjana = 0;
+            if (it == 1) executarHillClimbing(seed, n_gas, n_trucks, n_centros, solu_ini, true);
             else {
                 for (int i = 0; i < it; ++i) {
-                    executarHillClimbing(i + seed, n_gas, n_trucks, n_centros, false);
+                    mitjana += executarHillClimbing(i + seed, n_gas, n_trucks, n_centros,solu_ini, false);
                 }
+                mitjana /= it;
+                System.out.println("Mitjana execucio::: " + mitjana);
             }
         }
         else if (tipus.equals("S") || tipus.equals("s")) {
             System.out.println("Quantes iteracions?");
             int iteracions = sc.nextInt();
-            System.out.println("Indica seed, n_gas, n_trucks, n_centros, n_it, it_temp, k, l: ");
+            System.out.println("Indica seed");
             int seed = sc.nextInt();
+            System.out.println("Indica n_gas");
             int n_gas = sc.nextInt();
+            System.out.println("Indica n_trucks");
             int n_trucks = sc.nextInt();
+            System.out.println("Indica n_centros");
             int n_centros = sc.nextInt();
+            System.out.println("Indica solu_ini(0->buit, 1->swaps a viatge.g1, 2->swaps a tot, 3->add a tot)");
+            int solu_ini = sc.nextInt();
+            System.out.println("Indica n_it");
             int n_it = sc.nextInt();
+            System.out.println("Indica it_temp");
             int it_temp = sc.nextInt();
+            System.out.println("Indica k");
             int k = sc.nextInt();
+            System.out.println("Indica lambda");
             double l = sc.nextDouble();
-            if (iteracions == 1) executarSA(seed, n_gas, n_trucks, n_centros, n_it, it_temp, k, l, true);
+            double mitjana = 0;
+            if (iteracions == 1) executarSA(seed, n_gas, n_trucks, n_centros, n_it, it_temp, k, l, solu_ini, true);
             else {
                 for (int i = 0; i < iteracions; ++i) {
-                    executarSA(i + seed, n_gas, n_trucks, n_centros, n_it, it_temp, k, l, false);
+                    //executarSA(i + seed, n_gas, n_trucks, n_centros, n_it, it_temp, k, l, false);
+                    mitjana += executarSA(i + seed, n_gas, n_trucks, n_centros, n_it, it_temp, k, l, solu_ini, false);
                 }
+                mitjana /= iteracions
+                ;
+                System.out.println("Mitjana execucio:::  k " + k + " lamda: " + l + " es "+ mitjana);
             }
         }
         else System.out.println("Incorrecte, torna a executar el programa i escriu H o S");
 
     }
 
-    private static void executarHillClimbing(int seed, int n_gas, int n_trucks, int n_centros, boolean debug) throws Exception {
+    private static double executarHillClimbing(int seed, int n_gas, int n_trucks, int n_centros, int solu_ini, boolean debug) throws Exception {
         // Init les Gasolineres
         Gasolineras gasolineras = new Gasolineras(n_gas,seed);
         int id = 0;
@@ -104,6 +126,8 @@ public class Main {
 
         Estat mapa = new Estat(dada_camios,peticions_ates);
 
+        inicialitzar_estat(mapa, solu_ini);
+
         Problem p = new Problem(mapa, new DistributionSuccessorFunction(), new PGoalTest(), new PHeuristicFunction());;
         Search search = new HillClimbingSearch();
         SearchAgent search_agent = new SearchAgent(p, search);
@@ -121,13 +145,14 @@ public class Main {
 
 
         System.out.println(e.heuristic());
+        return (e.heuristic());
 
 
     }
 
 
 
-    private static void executarSA(int seed, int n_gas, int n_trucks, int n_centros, int n_it, int it_temp, int k, double l, boolean debug) throws Exception {
+    private static double executarSA(int seed, int n_gas, int n_trucks, int n_centros, int n_it, int it_temp, int k, double l, int solu_ini, boolean debug) throws Exception {
         //it_temp -= (n_it)%it_temp;
         // Init les Gasolineres
         Gasolineras gasolineras = new Gasolineras(n_gas,seed);
@@ -173,6 +198,8 @@ public class Main {
 
         Estat mapa = new Estat(dada_camios,peticions_ates);
 
+        inicialitzar_estat(mapa, solu_ini);
+
         Problem p = new Problem(mapa, new DistributionSuccessorSA(), new PGoalTest(), new PHeuristicFunction());;
         Search search = new SimulatedAnnealingSearch(n_it, it_temp, k, l);
         SearchAgent search_agent = new SearchAgent(p, search);
@@ -190,6 +217,7 @@ public class Main {
 
 
         System.out.println(e.heuristic());
+        return e.heuristic();
 
 
     }
@@ -213,5 +241,48 @@ public class Main {
         }
     }
 
+    private static void inicialitzar_estat(Estat e, int cas) {
+        if (cas == 0) return;                               //buit
+        if (cas == 1) {                                     //swaps a posicio 1 de cada viatge
+            Random randomGenerator = new Random();
+            for (int c = 0; c < e.camions.length; ++c) {
+                for (int v = 0; v < 5; ++v) {
+                    Estat new_state = new Estat(e.getDades_camio(), e.getPeticio_atesa());
+                    int p = randomGenerator.nextInt(e.peticio_atesa.length);
+                    if (!e.peticio_atesa[p] && new_state.swap_entre_viatges(c, v, 0, p)) {
+                            e.swap_entre_viatges(c, v, 0, p);
+                    }
+                }
+            }
+            return;
+        }
 
+        else if (cas == 2) {                                //swaps a totes posicions
+            Random randomGenerator = new Random();
+            for (int c = 0; c < e.camions.length; ++c) {
+                for (int v = 0; v < 5; ++v) {
+                    for (int i = 0; i < 2; ++i) {
+                        Estat new_state = new Estat(e.getDades_camio(), e.getPeticio_atesa());
+                        int p = randomGenerator.nextInt(e.peticio_atesa.length);
+                        if (!e.peticio_atesa[p] && new_state.swap_entre_viatges(c, v, 0, p)) {
+                            e.swap_entre_viatges(c, v, 0, p);
+                        }
+                    }
+                }
+            }
+            return;
+        }
+
+        else if (cas == 3) {                                    //adds random a tota posicio
+            Random randomGenerator = new Random();
+            for (int c = 0; c < e.camions.length; ++c) {
+                Estat new_state = new Estat(e.getDades_camio(), e.getPeticio_atesa());
+                int p = randomGenerator.nextInt(e.peticio_atesa.length);
+                if (!e.peticio_atesa[p] && new_state.check_and_add(c, p)) {
+                    e.check_and_add(c, p);
+                }
+            }
+            return;
+        }
+    }
 }
