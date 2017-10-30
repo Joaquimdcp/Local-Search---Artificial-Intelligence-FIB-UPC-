@@ -17,13 +17,14 @@ import java.util.Properties;
 
 public class Main {
 
-    public static void main(String[] args) throws Exception {
-        int seed = 1234; // Seed per a generar num aleatori
-        int n_gas = 100; //Numero de gasolineres
-        int n_trucks = 1; // Numero de camions
-        int n_centros = 10;
+    public static void main(String[] args) throws Exception{
+        //executarSolucio(1000, 100, 1, 10, true);
+        for (int i = 0; i < 100; ++i) {
+            executarHillClimbing(i, 100, 1, 10, false);
+        }
+    }
 
-
+    private static void executarHillClimbing(int seed, int n_gas, int n_trucks, int n_centros, boolean debug) throws Exception {
         // Init les Gasolineres
         Gasolineras gasolineras = new Gasolineras(n_gas,seed);
         int id = 0;
@@ -46,6 +47,7 @@ public class Main {
         boolean[] peticions_ates = new boolean[peticions_totals.size()];
         int j = 0;
         for(Peticio p: peticions_totals){
+            if (debug) System.out.println(p.getX() + " " + p.getY() + " "+ p.getDies());
             peticions[j] = p;
             peticions_ates[j] = false;
             j += 1;
@@ -57,7 +59,7 @@ public class Main {
         Distribucion[] camions = new Distribucion[centros_dist.size()];
         int ide = 0;
         for(Distribucion dist: centros_dist){
-            System.out.println("Camio: " + ide + " X:" + dist.getCoordX() + " Y:" + dist.getCoordY());
+            if (debug)System.out.println("Camio: " + ide + " X:" + dist.getCoordX() + " Y:" + dist.getCoordY());
             dada_camios[ide] = new Dada_Camio(id);;
             camions[ide] = dist;
             ide += 1;
@@ -73,11 +75,14 @@ public class Main {
 
         Estat e = (Estat) search.getGoalState();
 
-        e.imprimeix_estat();
-
-        System.out.println();
-        printActions(search_agent.getActions());
-        printInstrumentation(search_agent.getInstrumentation());
+        if (debug) {
+            e.imprimeix_estat();
+            System.out.println();
+            printActions(search_agent.getActions());
+            printInstrumentation(search_agent.getInstrumentation());
+            if (e.HiHaRepetits()) System.out.println("Es repeteixen peticions    :(");
+            else System.out.println("NO HI HA REPETITS!!!   :D");
+        }
 
 
         System.out.println(e.heuristic());

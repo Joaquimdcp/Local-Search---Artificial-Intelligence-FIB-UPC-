@@ -18,7 +18,7 @@ public class DistributionSuccessorFunction implements SuccessorFunction {
                 Estat new_state = new Estat(board.getDades_camio(), board.getPeticio_atesa());
                 //si petició i compleix no atesa l'afegim
                 if (new_state.check_and_add(c, p)) {
-                    retval.add(new Successor(new String("add C:" + c + " P" + p), new_state));
+                    //retval.add(new Successor(new String("add C:" + c + " P" + p), new_state));
                 }
                 //sino mirem on la podem substituir
                 //en totes les posicions dels viatges camio
@@ -56,7 +56,7 @@ public class DistributionSuccessorFunction implements SuccessorFunction {
                                     //podem fer swap:
                                     Estat new_state = new Estat(board.getDades_camio(), board.getPeticio_atesa());
                                     if (new_state.swap_entre_camions(c, v, i, c2, v2, j)) {
-                                        retval.add(new Successor(new String("swap C: " + c + "  V: " + v + " " + i + ";  C: " + c2 + "  V: " + v + " " + j), new_state));
+                                        retval.add(new Successor(new String("swap_camions C: " + c + "  V: " + v + " " + i + ";  C: " + c2 + "  V: " + v + " " + j), new_state));
                                     }
                                 }
                             }
