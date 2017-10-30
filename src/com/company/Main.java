@@ -29,11 +29,14 @@ public class Main {
             int n_gas = sc.nextInt();
             int n_trucks = sc.nextInt();
             int n_centros = sc.nextInt();
+            double mitjana = 0;
             if (it == 1) executarHillClimbing(seed, n_gas, n_trucks, n_centros, true);
             else {
                 for (int i = 0; i < it; ++i) {
-                    executarHillClimbing(i + seed, n_gas, n_trucks, n_centros, false);
+                    mitjana += executarHillClimbing(i + seed, n_gas, n_trucks, n_centros, false);
                 }
+                mitjana /= it;
+                System.out.println("Mitjana execucio::: " + mitjana);
             }
         }
         else if (tipus.equals("S") || tipus.equals("s")) {
@@ -48,18 +51,22 @@ public class Main {
             int it_temp = sc.nextInt();
             int k = sc.nextInt();
             double l = sc.nextDouble();
+            double mitjana = 0;
             if (iteracions == 1) executarSA(seed, n_gas, n_trucks, n_centros, n_it, it_temp, k, l, true);
             else {
                 for (int i = 0; i < iteracions; ++i) {
-                    executarSA(i + seed, n_gas, n_trucks, n_centros, n_it, it_temp, k, l, true);
+                    mitjana += executarSA(i + seed, n_gas, n_trucks, n_centros, n_it, it_temp, k, l, false);
                 }
+                mitjana /= iteracions
+                ;
+                System.out.println("Mitjana execucio:::  k " + k + " lamda: " + l + " es "+ mitjana);
             }
         }
         else System.out.println("Incorrecte, torna a executar el programa i escriu H o S");
 
     }
 
-    private static void executarHillClimbing(int seed, int n_gas, int n_trucks, int n_centros, boolean debug) throws Exception {
+    private static double executarHillClimbing(int seed, int n_gas, int n_trucks, int n_centros, boolean debug) throws Exception {
         // Init les Gasolineres
         Gasolineras gasolineras = new Gasolineras(n_gas,seed);
         int id = 0;
@@ -121,13 +128,14 @@ public class Main {
 
 
         System.out.println(e.heuristic());
+        return (e.heuristic());
 
 
     }
 
 
 
-    private static void executarSA(int seed, int n_gas, int n_trucks, int n_centros, int n_it, int it_temp, int k, double l, boolean debug) throws Exception {
+    private static double executarSA(int seed, int n_gas, int n_trucks, int n_centros, int n_it, int it_temp, int k, double l, boolean debug) throws Exception {
         //it_temp -= (n_it)%it_temp;
         // Init les Gasolineres
         Gasolineras gasolineras = new Gasolineras(n_gas,seed);
@@ -190,6 +198,7 @@ public class Main {
 
 
         System.out.println(e.heuristic());
+        return e.heuristic();
 
 
     }
