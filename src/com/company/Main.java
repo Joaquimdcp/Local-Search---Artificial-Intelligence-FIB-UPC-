@@ -11,19 +11,52 @@ import aima.search.framework.SearchAgent;
 import aima.search.informed.HillClimbingSearch;
 import aima.search.informed.SimulatedAnnealingSearch;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Properties;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.*;
 
 public class Main {
 
     public static void main(String[] args) throws Exception{
-        //executarSolucio(1000, 100, 1, 10, true);
-        //for (int i = 0; i < 100; ++i) {
-            //executarHillClimbing(i, 100, 1, 10, false);
-            executarSA(1234, 100, 1, 10, 10000, 1000, 85, 0.05, true);
-        //}
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Escriu H per a Hill Climbing o S per a Simulated Annealing: ");
+        String tipus = sc.nextLine();
+        if (tipus.equals("H") || tipus.equals("h")) {
+            System.out.println("Quantes iteracions?");
+            int it = sc.nextInt();
+            System.out.println("Indica seed, n_gas, n_trucks, n_centros: ");
+            int seed = sc.nextInt();
+            int n_gas = sc.nextInt();
+            int n_trucks = sc.nextInt();
+            int n_centros = sc.nextInt();
+            if (it == 1) executarHillClimbing(seed, n_gas, n_trucks, n_centros, true);
+            else {
+                for (int i = 0; i < it; ++i) {
+                    executarHillClimbing(i + seed, n_gas, n_trucks, n_centros, false);
+                }
+            }
+        }
+        else if (tipus.equals("S") || tipus.equals("s")) {
+            System.out.println("Quantes iteracions?");
+            int iteracions = sc.nextInt();
+            System.out.println("Indica seed, n_gas, n_trucks, n_centros, n_it, it_temp, k, l: ");
+            int seed = sc.nextInt();
+            int n_gas = sc.nextInt();
+            int n_trucks = sc.nextInt();
+            int n_centros = sc.nextInt();
+            int n_it = sc.nextInt();
+            int it_temp = sc.nextInt();
+            int k = sc.nextInt();
+            int l = sc.nextInt();
+            if (iteracions == 1) executarSA(seed, n_gas, n_trucks, n_centros, n_it, it_temp, k, l, true);
+            else {
+                for (int i = 0; i < iteracions; ++i) {
+                    executarSA(i + seed, n_gas, n_trucks, n_centros, n_it, it_temp, k, l, true);
+                }
+            }
+        }
+        else System.out.println("Incorrecte, torna a executar el programa i escriu H o S");
+
     }
 
     private static void executarHillClimbing(int seed, int n_gas, int n_trucks, int n_centros, boolean debug) throws Exception {
